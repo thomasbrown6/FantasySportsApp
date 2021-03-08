@@ -14,6 +14,7 @@ app.use(express.json({ extended: false }));
 app.use('/api/users', require('./routes/api/users'));
 app.use('/api/auth', require('./routes/api/auth'));
 app.use('/api/football/nfl', require('./routes/api/football/nfl'));
+app.use('/api/football/ncaa', require('./routes/api/football/ncaa'));
 
 // Serve static assets in production
 if (process.env.NODE_ENV === 'production') {

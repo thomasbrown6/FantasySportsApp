@@ -1,21 +1,35 @@
-import React, { Fragment, useEffect } from "react";
-import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
-import { connect } from "react-redux";
-import Spinner from "../layout/Spinner";
-import DashboardActions from "./DashboardActions";
+import React, { Fragment, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import Spinner from '../layout/Spinner';
+import DashboardActions from './DashboardActions';
 
-const Dashboard = ({ auth: { user } }) => {
+//Actions
+import { getNCAALiveScores } from '../../actions/ncaa';
+
+const Dashboard = ({
+	auth: { user },
+	ncaa: { scores, loaded },
+	getNCAALiveScores
+}) => {
 	// useEffect(() => {
 	//   getCurrentProfile();
 	// }, [getCurrentProfile]);
 
 	return (
 		<Fragment>
-			<h1 className="large text-primary">Dashboard</h1>
-			<p className="lead">
-				<i className="fas fa-user"> Welcome {user && user.name}</i>
+			<h1 className='large text-primary'>Dashboard</h1>
+			<p className='lead'>
+				<i className='fas fa-user'> Welcome {user && user.name}</i>
 			</p>
+			<div className='my-2'>
+				<button
+					onClick={() => getNCAALiveScores()}
+					className='btn btn-primary'>
+					Get NCAA Live Scores
+				</button>
+			</div>
 			{/* {profile != null ? (
         <Fragment>
           <DashboardActions />
@@ -37,11 +51,14 @@ const Dashboard = ({ auth: { user } }) => {
 };
 
 Dashboard.propTypes = {
-	auth: PropTypes.object.isRequired
+	auth: PropTypes.object.isRequired,
+	ncaa: PropTypes.object.isRequired,
+	getNCAALiveScores: PropTypes.func.isRequired
 };
 
 const mapStateToProps = (state) => ({
-	auth: state.auth
+	auth: state.auth,
+	ncaa: state.ncaa
 });
 
-export default connect(mapStateToProps, null)(Dashboard);
+export default connect(mapStateToProps, { getNCAALiveScores })(Dashboard);
