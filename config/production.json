@@ -1,6 +1,7 @@
 {
-    "mongoURI": "mongodb+srv://thomasbrown6:tabrown11@devconnector-qffcf.mongodb.net/test?retryWrites=true&w=majority",
-    "jwtSecret": "mysecrettoken",
-    "githubClientId": "b542d7a4085498db06c9",
-    "githubSecret": "fa576b98e5316678c3ff79f2a299d0e5f4e5ee30"
+	"mongoURI": "mongodb+srv://thomasbrown6:tabrown11@devconnector-qffcf.mongodb.net/test?retryWrites=true&w=majority",
+	"jwtSecret": "mysecrettoken",
+	"githubClientId": "b542d7a4085498db06c9",
+	"githubSecret": "fa576b98e5316678c3ff79f2a299d0e5f4e5ee30",
+	"goalserveApiKey": "76a38b9fd3e2437b762608d8c8de2a79"
 }
