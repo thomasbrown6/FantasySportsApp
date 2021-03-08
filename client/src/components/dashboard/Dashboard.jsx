@@ -25,9 +25,9 @@ const Dashboard = ({
 			</p>
 			<div className='my-2'>
 				<button
-					onClick={() => getNCAALiveScores()}
+					onClick={() => getNCAALiveScores('fbs')}
 					className='btn btn-primary'>
-					Get NCAA Live Scores
+					Get NCAA FBS Live Scores
 				</button>
 			</div>
 			{/* {profile != null ? (

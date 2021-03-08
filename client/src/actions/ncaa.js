@@ -1,13 +1,13 @@
 import axios from 'axios';
-import { GET_SCORES, NCAA_ERROR } from './types';
+import { GET_FBS_SCORES, NCAA_ERROR } from './types';
 
 // Get all accounts for specific user
-export const getNCAALiveScores = () => (dispatch) => {
+export const getNCAALiveScores = (division) => (dispatch) => {
 	axios
-		.get('/api/football/ncaa/fbs-scores')
+		.get(`/api/football/ncaa/${division}-scores`)
 		.then((res) =>
 			dispatch({
-				type: GET_SCORES,
+				type: GET_FBS_SCORES,
 				payload: res.data
 			})
 		)

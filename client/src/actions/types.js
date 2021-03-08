@@ -8,5 +8,5 @@ export const LOGOUT = 'LOGOUT';
 export const USER_LOADED = 'USER_LOADED';
 export const AUTH_ERROR = 'AUTH_ERROR';
 
-export const GET_SCORES = 'GET_SCORES';
+export const GET_FBS_SCORES = 'GET_FBS_SCORES';
 export const NCAA_ERROR = 'NCAA_ERROR';

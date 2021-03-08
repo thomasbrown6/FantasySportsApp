@@ -1,7 +1,13 @@
-import { GET_SCORES, NCAA_ERROR } from '../actions/types';
+import { GET_FBS_SCORES, NCAA_ERROR } from '../actions/types';
+
+import update from 'react-addons-update';
 
 const initialState = {
-	scores: [],
+	divisions: {
+		fbs: {},
+		fcs: {},
+		div3: {}
+	},
 	error: null,
 	loaded: false
 };
@@ -10,10 +16,14 @@ export default function (state = initialState, action) {
 	const { type, payload } = action;
 
 	switch (type) {
-		case GET_SCORES:
+		case GET_FBS_SCORES:
 			return {
 				...state,
-				scores: payload.scores,
+				divisions: {
+					fbs: payload.scores,
+					fcs: state.divisions.fcs,
+					div3: state.divisions.div3
+				},
 				loaded: true
 			};
 
