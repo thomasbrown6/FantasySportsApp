@@ -29,6 +29,16 @@ const Dashboard = ({
 					className='btn btn-primary'>
 					Get NCAA FBS Live Scores
 				</button>
+				<button
+					onClick={() => getNCAALiveScores('div3')}
+					className='btn btn-primary'>
+					Get NCAA Division 3 Live Scores
+				</button>
+				<button
+					onClick={() => getNCAALiveScores('fcs')}
+					className='btn btn-primary'>
+					Get NCAA FCS Live Scores
+				</button>
 			</div>
 			{/* {profile != null ? (
         <Fragment>

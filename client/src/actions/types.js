@@ -9,4 +9,6 @@ export const USER_LOADED = 'USER_LOADED';
 export const AUTH_ERROR = 'AUTH_ERROR';
 
 export const GET_FBS_SCORES = 'GET_FBS_SCORES';
+export const GET_FCS_SCORES = 'GET_FCS_SCORES';
+export const GET_DIV3_SCORES = 'GET_DIV3_SCORES';
 export const NCAA_ERROR = 'NCAA_ERROR';

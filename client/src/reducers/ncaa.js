@@ -1,4 +1,9 @@
-import { GET_FBS_SCORES, NCAA_ERROR } from '../actions/types';
+import {
+	GET_FBS_SCORES,
+	GET_FCS_SCORES,
+	GET_DIV3_SCORES,
+	NCAA_ERROR
+} from '../actions/types';
 
 import update from 'react-addons-update';
 
@@ -23,6 +28,26 @@ export default function (state = initialState, action) {
 					fbs: payload.scores,
 					fcs: state.divisions.fcs,
 					div3: state.divisions.div3
+				},
+				loaded: true
+			};
+		case GET_FCS_SCORES:
+			return {
+				...state,
+				divisions: {
+					fbs: state.divisions.fbs,
+					fcs: payload.scores,
+					div3: state.divisions.div3
+				},
+				loaded: true
+			};
+		case GET_DIV3_SCORES:
+			return {
+				...state,
+				divisions: {
+					fbs: state.divisions.fbs,
+					fcs: state.divisions.fcs,
+					div3: payload.scores
 				},
 				loaded: true
 			};
