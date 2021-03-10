@@ -65,4 +65,31 @@ router.get('/div3-scores', async (req, res) => {
 	}
 });
 
+// @route   GET api/football/ncaa/all-scores
+// @desc    Get NCAA Division 3 Scores
+// @access  Public
+router.get('/all-scores', async (req, res) => {
+	try {
+		const respFBS = await axios.get(`${goalserveUrl}/fbs-scores`, json);
+		const respFCS = await axios.get(`${goalserveUrl}/fcs-scores`, json);
+		const respDIV3 = await axios.get(`${goalserveUrl}/div3-scores`, json);
+
+		let response = {
+			fbs: respFBS.data,
+			fcs: respFCS.data,
+			div3: respDIV3.data
+		};
+
+		if (response) {
+			console.log(
+				`successful request to get all live scores: ${response}`
+			);
+			return res.status(200).send(response);
+		}
+	} catch (err) {
+		console.error(err.message);
+		return res.status(500).send('Server error');
+	}
+});
+
 module.exports = router;

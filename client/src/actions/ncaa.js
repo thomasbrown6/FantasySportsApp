@@ -3,6 +3,7 @@ import {
 	GET_FBS_SCORES,
 	GET_FCS_SCORES,
 	GET_DIV3_SCORES,
+	GET_ALL_NCAA_SCORES,
 	NCAA_ERROR
 } from './types';
 
@@ -31,6 +32,13 @@ export const getNCAALiveScores = (division) => (dispatch) => {
 				case 'div3':
 					dispatch({
 						type: GET_DIV3_SCORES,
+						payload: res.data
+					});
+					break;
+
+				case 'all':
+					dispatch({
+						type: GET_ALL_NCAA_SCORES,
 						payload: res.data
 					});
 					break;

@@ -2,7 +2,8 @@ import {
 	GET_FBS_SCORES,
 	GET_FCS_SCORES,
 	GET_DIV3_SCORES,
-	NCAA_ERROR
+	NCAA_ERROR,
+	GET_ALL_NCAA_SCORES
 } from '../actions/types';
 
 import update from 'react-addons-update';
@@ -48,6 +49,17 @@ export default function (state = initialState, action) {
 					fbs: state.divisions.fbs,
 					fcs: state.divisions.fcs,
 					div3: payload.scores
+				},
+				loaded: true
+			};
+
+		case GET_ALL_NCAA_SCORES:
+			return {
+				...state,
+				divisions: {
+					fbs: payload.fbs.scores,
+					fcs: payload.fcs.scores,
+					div3: payload.div3.scores
 				},
 				loaded: true
 			};

@@ -13,9 +13,12 @@ const Dashboard = ({
 	ncaa: { scores, loaded },
 	getNCAALiveScores
 }) => {
-	// useEffect(() => {
-	//   getCurrentProfile();
-	// }, [getCurrentProfile]);
+	useEffect(() => {
+		const interval = setInterval(() => {
+			getNCAALiveScores('all');
+		}, 30000);
+		return () => clearInterval(interval);
+	}, []);
 
 	return (
 		<Fragment>
@@ -38,6 +41,11 @@ const Dashboard = ({
 					onClick={() => getNCAALiveScores('fcs')}
 					className='btn btn-primary'>
 					Get NCAA FCS Live Scores
+				</button>
+				<button
+					onClick={() => getNCAALiveScores('all')}
+					className='btn btn-primary'>
+					Get NCAA Live Scores
 				</button>
 			</div>
 			{/* {profile != null ? (
