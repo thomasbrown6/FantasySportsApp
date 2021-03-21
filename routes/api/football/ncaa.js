@@ -81,9 +81,7 @@ router.get('/all-scores', async (req, res) => {
 		};
 
 		if (response) {
-			console.log(
-				`successful request to get all live scores: ${response}`
-			);
+			console.log(`successful request to get all NCAA live scores`);
 			return res.status(200).send(response);
 		}
 	} catch (err) {

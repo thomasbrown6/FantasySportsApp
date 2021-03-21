@@ -14,6 +14,10 @@ const Dashboard = ({
 	getNCAALiveScores
 }) => {
 	useEffect(() => {
+		getNCAALiveScores('all');
+	}, []);
+
+	useEffect(() => {
 		const interval = setInterval(() => {
 			getNCAALiveScores('all');
 		}, 30000);
