@@ -11,7 +11,7 @@ import update from 'react-addons-update';
 const initialState = {
 	divisions: {
 		fbs: {},
-		fcs: {},
+		fcs_live_scores: [],
 		div3: {}
 	},
 	error: null,
@@ -27,7 +27,7 @@ export default function (state = initialState, action) {
 				...state,
 				divisions: {
 					fbs: payload.scores,
-					fcs: state.divisions.fcs,
+					fcs_live_scores: state.divisions.fcs,
 					div3: state.divisions.div3
 				},
 				loaded: true
@@ -37,7 +37,7 @@ export default function (state = initialState, action) {
 				...state,
 				divisions: {
 					fbs: state.divisions.fbs,
-					fcs: payload.scores,
+					fcs_live_scores: payload,
 					div3: state.divisions.div3
 				},
 				loaded: true
@@ -47,7 +47,7 @@ export default function (state = initialState, action) {
 				...state,
 				divisions: {
 					fbs: state.divisions.fbs,
-					fcs: state.divisions.fcs,
+					fcs_live_scores: state.divisions.fcs,
 					div3: payload.scores
 				},
 				loaded: true
@@ -58,7 +58,7 @@ export default function (state = initialState, action) {
 				...state,
 				divisions: {
 					fbs: payload.fbs.scores,
-					fcs: payload.fcs.scores,
+					fcs_live_scores: payload.fcs.scores,
 					div3: payload.div3.scores
 				},
 				loaded: true

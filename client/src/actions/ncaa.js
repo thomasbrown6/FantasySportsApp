@@ -22,7 +22,7 @@ export const getNCAALiveScores = (division) => (dispatch) => {
 					});
 					break;
 
-				case 'fcs':
+				case 'fcs-live':
 					dispatch({
 						type: GET_FCS_SCORES,
 						payload: res.data

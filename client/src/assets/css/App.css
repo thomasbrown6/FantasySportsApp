@@ -2,127 +2,153 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 
 .App {
-  text-align: center;
-  padding: 60px;
-  background-color: black;
+	text-align: center;
+	padding: 60px;
+	background-color: black;
+	height: 100vh;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+	height: 40vmin;
+	pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
 }
 
 .App-link {
-  color: #61dafb;
+	color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
 
 /* Header and Footer */
 
-#header{
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  background-color: black;
-  list-style: none;
-  padding: 10px;
+#header {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	background-color: black;
+	list-style: none;
+	padding: 10px;
 }
 
-#subheader{
-  background-color: black;
+#subheader {
+	background-color: black;
 }
 
-#logo{
-  width: 100px;
-  margin-top: 10px;
+#logo {
+	width: 100px;
+	margin-top: 10px;
 }
-#carouselHeader{
-  filter: grayscale(100%);
-}
-
-#scores{
-  width:70%;
-  align-items: center;
-  display:flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-#footer{
-  background-color: green;
+#carouselHeader {
+	filter: grayscale(100%);
 }
 
-#navbar{
-  margin-top: 10px;
-  align-content: center;
-  justify-content: center;
-  background-color: black;
-  list-style: none;
-  display: flex;
-  color: white;
-  text-shadow: 1px 1px black;
+#scores {
+	width: 70%;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+#footer {
+	background-color: green;
+}
 
+#cardimg {
+	width: 100px;
 }
-li{
-  margin: 0px 20px
-}
-#loginDiv{
-display: flex;
-justify-content: left;
 
+#navbar {
+	margin-top: 10px;
+	align-content: center;
+	justify-content: center;
+	background-color: black;
+	list-style: none;
+	display: flex;
+	color: white;
+	text-shadow: 1px 1px black;
 }
-.float-child{
-  width: 50%;
-  float: left;
-  padding: 20px;
+li {
+	margin: 0px 20px;
+	color: rgb(16, 88, 133);
+}
+#loginDiv {
+	display: flex;
+	justify-content: left;
+	color: #61dafb;
+}
+.float-child {
+	width: 50%;
+	float: left;
+	padding: 20px;
 }
 /* Pages and content */
-#home{
-  background-color: hotpink;
+#home {
+	background-color: hotpink;
 }
 
 /* schedule */
 
-#cardmain{
-  font-family: 'Staatliches', cursive;
+#cardmain {
+	font-family: 'Staatliches', cursive;
 }
 
-#cardimage{
-filter: saturate(100%);
+#cardimage {
+	filter: saturate(100%);
 }
 
-h3{
-  font-family: 'Poiret One', cursive;
+h3 {
+	font-family: 'Poiret One', cursive;
+	color: rgb(16, 88, 133);
 }
 
-#search{
-  margin-top: 10px;
-  width: 70px;
-  height: auto;
-  margin-left: 30px;
+a href {
+	color: rgb(16, 88, 133);
+}
+#scorestext {
+	font-family: 'Poiret One', cursive;
+	color: rgb(16, 88, 133);
+	margin: 10px;
+}
+
+#search {
+	margin-top: 10px;
+	width: 70px;
+	height: auto;
+	margin-left: 30px;
+}
+
+#testcarousel {
+	display: flex;
+}
+
+/* stats */
+
+#stats {
+	background: rgb(16, 88, 133);
+	width: 50%;
 }
