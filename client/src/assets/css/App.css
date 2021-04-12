@@ -142,8 +142,14 @@ a href {
 	margin-left: 30px;
 }
 
-#testcarousel {
-	display: flex;
+.active,
+.carousel-item-next,
+.carousel-item-prev {
+	display: flex !important;
+}
+
+.carousel-item {
+	margin-bottom: 20px;
 }
 
 /* stats */
