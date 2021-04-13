@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.34ffde91.chunk.css",
+    "main.js": "/static/js/main.048f873f.chunk.js",
+    "main.js.map": "/static/js/main.048f873f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b5d1efea.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b5d1efea.js.map",
+    "static/css/2.af04be4e.chunk.css": "/static/css/2.af04be4e.chunk.css",
+    "static/js/2.b59572d8.chunk.js": "/static/js/2.b59572d8.chunk.js",
+    "static/js/2.b59572d8.chunk.js.map": "/static/js/2.b59572d8.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.8e22f4a209953930a56e96bac89998a4.js": "/precache-manifest.8e22f4a209953930a56e96bac89998a4.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.af04be4e.chunk.css.map": "/static/css/2.af04be4e.chunk.css.map",
+    "static/css/main.34ffde91.chunk.css.map": "/static/css/main.34ffde91.chunk.css.map",
+    "static/media/cerberus.png": "/static/media/cerberus.3262e475.png",
+    "static/media/henrystiffarm.jpeg": "/static/media/henrystiffarm.1a80f24d.jpeg",
+    "static/media/hopkinscatch.jpg": "/static/media/hopkinscatch.fc301646.jpg",
+    "static/media/lamarjuke.jpg": "/static/media/lamarjuke.f80548a5.jpg",
+    "static/media/mahomespass.jpg": "/static/media/mahomespass.239c4fef.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b5d1efea.js",
+    "static/css/2.af04be4e.chunk.css",
+    "static/js/2.b59572d8.chunk.js",
+    "static/css/main.34ffde91.chunk.css",
+    "static/js/main.048f873f.chunk.js"
+  ]
+}
