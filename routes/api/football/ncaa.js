@@ -3,6 +3,7 @@ const router = express.Router();
 const config = require('config');
 const axios = require('axios');
 const { check, validationResult } = require('express-validator');
+const { relativeTimeRounding } = require('moment');
 
 const goalserveUrl = `http://www.goalserve.com/getfeed/${config.get(
 	'goalserveApiKey'
@@ -136,6 +137,27 @@ router.get('/top25-scores', async (req, res) => {
 			console.log(`successful request to get all NCAA live scores`);
 			return res.status(200).send(response);
 		}
+	} catch (err) {
+		console.error(err.message);
+		return res.status(500).send('Server error');
+	}
+});
+
+// @route   GET api/football/ncaa/div3-schedule
+// @desc    Get NCAA Div3 Schedule
+// @access  Public
+router.get('/div3-schedule', async (req, res) => {
+	try {
+		const resp = await axios.get(`${goalserveUrl}/div3-schedule`, json);
+
+		let response = {
+			div3Schedule: resp.data
+		};
+
+		if (!response) return res.status(200).send('No data to return');
+
+		console.log(`successful request to get all NCAA Div3 Schedule`);
+		return res.status(200).send(response);
 	} catch (err) {
 		console.error(err.message);
 		return res.status(500).send('Server error');
