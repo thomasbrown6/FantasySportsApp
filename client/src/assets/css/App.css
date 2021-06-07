@@ -84,8 +84,8 @@
 
 #navbar {
 	margin-top: 10px;
-	/* align-content: center;
-	justify-content: center; */
+	align-content: center;
+	justify-content: center;
 	background-color: black;
 	list-style: none;
 	display: flex;
