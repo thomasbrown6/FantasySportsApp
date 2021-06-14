@@ -1,26 +1,38 @@
-const mongoose = require('mongoose');
+const Sequelize = require('sequelize');
+const sequelize = require('../config/sequelize');
+const { DataTypes } = require('sequelize');
 
-const UserSchema = new mongoose.Schema({
-    name: {
-        type: String,
-        required: true,
-    },
-    email: {
-        type: String,
-        required: true,
-        unique: true
-    },
-    password: {
-        type: String,
-        required: true
-    },
-    avatar: {
-        type: String
-    },
-    date: {
-        type: Date,
-        default: Date.now
-    }
-});
+const User = sequelize.define(
+	'User',
+	{
+		// Model attributes are defined here
+		id: {
+			type: DataTypes.INTEGER,
+			allowNull: false,
+			primaryKey: true,
+			autoIncrement: true
+		},
+		firstName: {
+			type: DataTypes.STRING,
+			allowNull: false
+		},
+		lastName: {
+			type: DataTypes.STRING
+			// allowNull defaults to true
+		},
+		email: {
+			type: DataTypes.STRING,
+			allowNull: false
+		},
+		admin: {
+			type: DataTypes.BOOLEAN,
+			allowNull: false,
+			defaultValue: false
+		}
+	},
+	{
+		// Other model options go here
+	}
+);
 
-module.exports = User = mongoose.model('user', UserSchema);
+User.sync({ alter: true });
