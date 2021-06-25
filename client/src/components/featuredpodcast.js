@@ -15,20 +15,20 @@ class Featurepodcast extends React.Component{
     <div id= 'podcastgroup'>
 
                 <Podcast id='podcastindividual'  
-                title ='Article' description ='' video='https://www.youtube.com/watch?v=cBlnAKYrhxM'/>
+                title ='Article' description ='' video='https://www.youtube.com/watch?v=fqvxaCHnzBo'/>
                 <br></br>
                 <Podcast  
-                title ='article' description =''video='https://www.youtube.com/watch?v=cBlnAKYrhxM'/>
+                title ='article' description =''video='https://www.youtube.com/watch?v=fqvxaCHnzBo'/>
                 <Podcast  
-                title ='article' description =''video='https://www.youtube.com/watch?v=cBlnAKYrhxM'/>
+                title ='article' description =''video='https://www.youtube.com/watch?v=fqvxaCHnzBo'/>
                 <Podcast  
-                title ='article' description =''video='https://www.youtube.com/watch?v=cBlnAKYrhxM'/>
+                title ='article' description =''video='https://www.youtube.com/watch?v=fqvxaCHnzBo'/>
                 <Podcast  
-                title ='article' description =''video='https://www.youtube.com/watch?v=cBlnAKYrhxM'/>
+                title ='article' description =''video='https://www.youtube.com/watch?v=fqvxaCHnzBo'/>
                 <Podcast  
-                title ='article' description =''video='https://www.youtube.com/watch?v=cBlnAKYrhxM'/>
+                title ='article' description =''video='https://www.youtube.com/watch?v=fqvxaCHnzBo'/>
                 <Podcast  
-                title ='article' description =''video='https://www.youtube.com/watch?v=cBlnAKYrhxM'/>
+                title ='article' description =''video='https://www.youtube.com/watch?v=fqvxaCHnzBo'/>
          
     </div>
 </div>

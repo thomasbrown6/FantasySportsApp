@@ -19,7 +19,7 @@ class Featurevideo extends React.Component{
   
       <ReactPlayer
             className='react-player'
-            url='https://www.youtube.com/watch?v=hglE8x8isKs&t=358s'
+            url='https://www.youtube.com/watch?v=fqvxaCHnzBo'
             width='100%'
             height='100%'
           />
@@ -33,7 +33,7 @@ class Featurevideo extends React.Component{
   
       <ReactPlayer
             className='react-player'
-            url='https://www.youtube.com/watch?v=hglE8x8isKs&t=358s'
+            url='https://www.youtube.com/watch?v=fqvxaCHnzBo'
             width='100%'
             height='100%'
           />
@@ -47,7 +47,7 @@ class Featurevideo extends React.Component{
   
       <ReactPlayer
     className='react-player'
-    url='https://www.youtube.com/watch?v=hglE8x8isKs&t=358s'
+    url='https://www.youtube.com/watch?v=fqvxaCHnzBo'
     width='100%'
     height='100%'
   />

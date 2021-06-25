@@ -78,6 +78,7 @@ bottom: 10px;
 }
 
 #scores{
+
   width:70%;
   align-items: center;
   display:flex;
@@ -104,13 +105,15 @@ bottom: 10px;
   display: flex;
   color: white;
   text-shadow: 1px 1px black;
-  width: 70%;
+  width: 100%;
 
 }
 
 
 li{
-  margin: 0px 20px;
+	font-size: 20px;
+width: fit-content;
+  margin: 0px 25px;
 color: #afb0b2;
 }
 
@@ -214,10 +217,13 @@ right: 100px;
 
 #articlesmain h1{
   font-size: 34px;
+  color: white;
 }
 
 #articlesmain h4{
   font-size: small;
+  color: white;
+
 }
 #articlesmain a{
   font-size: smaller;
@@ -238,7 +244,7 @@ right: 100px;
 
 #articlessecondary h5{
 position: relative;
-left: 150px;
+left: 160px;
 bottom: 250px;
 font-size: small;
 }
@@ -246,23 +252,27 @@ font-size: small;
 #articlessecondary h4{
   position: relative;
   bottom: 250px;
-  left: 200px;
+  left: 210px;
   width: 70%;
   font-size: small;
+  color: white;
+
 }
 #articlessecondary h1{
   position: relative;
 bottom: 240px;
-left: 200px;
+left: 210px;
 font-size: smaller;
 width: 70%;
+color: white;
+
 }
 
 
 #articlessecondary a{
   position: relative;
   bottom: 250px;
-  left: 140px;
+  left: 160px;
   font-size: small;
 }
 
@@ -274,7 +284,7 @@ bottom: 150px;
 
 #articlesthree h5{
 position: relative;
-left: 150px;
+left: 160px;
 bottom: 350px;
 font-size: small;
 width: 70%;
@@ -282,23 +292,27 @@ width: 70%;
 }
 #articlesthree h4{
 position: relative;
-left: 210px;
+left: 220px;
 bottom: 340px;
 font-size: small;
+color: white;
+
 width: 70%;
 /* button and text have same font size correct tomorrow */
 }
 
 #articlesthree h1{
   position: relative;
-  left: 160px;
+  left: 170px;
   bottom: 340px;
   font-size: smaller;
+  color: white;
+
 }
 
 #articlesthree a{
   position: relative;
-  left: 140px;
+  left: 160px;
   bottom: 340px;
 }
 #featuredmain img{
@@ -403,6 +417,7 @@ width: 70%;
 
 #featuredpodcast h1{
   font-style: italic;
+  color: white;
 
 }
 
@@ -418,6 +433,7 @@ width: 70%;
   right: 50px;
   top: 430px;
   font-style: italic;
+  color: white;
 
 }
 
@@ -445,6 +461,8 @@ position: relative;
 right: 400px;
 bottom: 40px;
 font-style: italic;
+color: white;
+
 }
 #podcastindividual{
   display: inline-block;
