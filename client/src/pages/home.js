@@ -1,16 +1,50 @@
-import React from 'react';
-import Schedules from '../components/schedules';
+import React from 'react'
+import Featuredhighlights from '../components/featuredhighlights';
+import Featureinfo from '../components/featuredinfo';
+import Featuredmain from '../components/featuredmain';
+import Featurepodcast from '../components/featuredpodcast'
+import Featurevideo from '../components/featuredvideo';
+import Highlights from '../components/highlight';
+class Home extends React.Component{
+    render(){
+        return(
+            <div id= 'home'>
+                <row id='outerfeatured'>
+                <br></br>
+                <br></br>
+<Featuredmain/>
+                    
+                </row>
+                <row>
+<Featurepodcast/>
 
-class Home extends React.Component {
-	render() {
-		return (
-			<div id='home'>
-				<Schedules />
-				<h1>This is where your content goes</h1>
-				<p>Insert content into this section here</p>
-			</div>
-		);
-	}
+                    
+                </row>
+                <br></br>
+                <br></br>
+                <row>
+
+<Featuredhighlights/>
+                    
+                </row>
+                <br></br>
+                <br></br>
+                <row>
+<Featurevideo/>
+
+                    
+                </row>
+                <br></br>
+                <br></br>
+                <row>
+
+<Featureinfo/>
+                    
+                </row>
+
+            </div>
+        )
+    }
 }
 
 export default Home;

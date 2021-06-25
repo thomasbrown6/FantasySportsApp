@@ -1,9 +1,9 @@
 import React from 'react'
-
 import ReactPlayer from 'react-player'
 import Card from 'react-bootstrap/Card'
 import CardGroup from 'react-bootstrap/CardGroup'
 import Highlightsmain from '../assets/images/HIGHLIGHTSMAIN.png'
+
 import Highlightsoutline from '../assets/images/HIGHLIGHTSOUTLINE.png'
 import Highlights2 from '../assets/images/HIGHLIGHTS2.png'
 

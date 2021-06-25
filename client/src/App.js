@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './assets/css/App.css';
 import './assets/css/App.scss';
 
-import Header from './components/header';
 import Home from './pages/home';
 import Footer from './components/footer';
 import Navbar from './components/navbar';
@@ -48,7 +47,6 @@ const App = () => {
 					<div className='App'>
 						<Subheader />
 						<Scores />
-						<Header />
 						<Route exact path='/' component={Home} />
 						<section className='container'>
 							<Alert />
