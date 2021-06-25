@@ -1,40 +1,37 @@
-import React from 'react'
+import React from "react";
 
+class Articles2 extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      img: this.props.img,
+      title: this.props.title,
+      description: this.props.description,
+      date: this.props.date,
+      weblink: this.props.weblink,
+    };
+  }
+  render() {
+    const { img, title, description, weblink, date } = this.state;
+    return (
+      <div id="articlessecondary">
+        <div>
+          <img src={img} style={{ width: "250px" }} />
+          <div id="articlecontent">
+            <h5 id="datebubble">{date}</h5>
 
-class Articles2 extends React.Component{
-    constructor(props){
-        super(props);
-this.state = {
-    img: this.props.img,
-    title: this.props.title,
-    description: this.props.description,
-    date: this.props.date,
-    weblink: this.props.weblink
-}
-        
-    }
-    render(){
-        const{img, title, description, weblink, date} = this.state
-        return(
-            <div id ='articlessecondary'>
-       <div>
-              <img src={img} style={{width:'250px'}}/>
-              <div id ='articlecontent'>
+            <h1>{title}</h1>
 
-              <h5 id='datebubble'>{date}</h5> 
+            <h4>{description}</h4>
 
-              <h1>{title}</h1>
-              
-              <h4>{description}</h4>
-              
-              <a href ={weblink}><h3>Explore more</h3></a>
-              </div>
-
-              </div>
-</div>
-            
-        )
-    }
+            <a href={weblink}>
+              <h3>Explore more</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default Articles2;
