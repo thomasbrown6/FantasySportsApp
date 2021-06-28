@@ -1,13 +1,13 @@
 import React from "react";
+import Table from "../components/tabledata";
+import Filter from "../components/filter";
 
-class Stats extends React.Component {
-  render() {
-    return (
-      <div>
-        <h1>This is where your stats go!</h1>
-      </div>
-    );
-  }
-}
-
+const Stats = () => {
+  return (
+    <div>
+      <Filter />
+      <Table />
+    </div>
+  );
+};
 export default Stats;

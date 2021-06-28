@@ -20,7 +20,7 @@ class Navbar extends React.Component {
                 <li>NCAAF</li>
               </h3>
             </Link>
-            <Link to="/statstable">
+            <Link to="/stats">
               <h3>
                 <li>Stats</li>
               </h3>

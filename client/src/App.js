@@ -58,7 +58,7 @@ const App = () => {
                 <Route exact path="/ncaaf" component={NCAAF} />
                 <Route exact path="/stats" component={Stats} />
                 <Route exact path="/articles" component={Articles} />
-                <Route exact path="/statstable" component={Statstable} />
+                <Route exact path="/stats" component={Statstable} />
 
                 <Route exact path="/news" component={News} />
               </Switch>
