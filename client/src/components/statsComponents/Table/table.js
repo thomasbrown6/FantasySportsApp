@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import classes from "./Table.module.css";
-import Pages from "./Components/Pages/Pages";
+import Pages from "./Components/Pages";
 import Button from "@material-ui/core/Button";
 import Grid from "@material-ui/core/Grid";
-import svgg from "../../../../Assets/secondHeader2.svg";
+import svg from "../../../assets/images/secondHeader2.svg";
 import { tableData } from "./data";
 const Table = () => {
   const data = tableData;

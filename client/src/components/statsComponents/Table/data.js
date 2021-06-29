@@ -1,5 +1,6 @@
+import React from 'react'
 import classes from "./Table.module.css";
-import avatar from "../../../../Assets/avatar.png";
+import avatar from "../../../assets/images/avatar.png";
 
 export const tableData = [
   {

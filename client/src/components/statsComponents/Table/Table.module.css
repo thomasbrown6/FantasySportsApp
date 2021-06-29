@@ -161,7 +161,7 @@
     }
     .firstHeader {
       height: 50px !important;
-      background: url("../../../../Assets/firstHeader2.svg");
+      background: url("../../../assets/images/firstHeader2.svg");
       background-position: 280px 0px !important;
       background-repeat: no-repeat;
       background-size: 100% 100%;
@@ -169,7 +169,7 @@
     .secondHeader {
       height: 60px !important;
       width: 100px !important;
-      background: url("../../../../Assets/secondHeader.png");
+      background: url("../../../assets/images/secondHeader.png");
       background-position: 0px 0px !important;
       background-repeat: no-repeat;
       background-size: 100% 100%;
@@ -226,7 +226,7 @@
   @media screen and (max-width: 1150px) {
     .firstHeader {
       height: 50px !important;
-      background: url("../../../../Assets/firstHeader3.svg");
+      background: url("../../../assets/images/firstHeader3.svg");
       background-position: 250px 0px !important;
       background-repeat: no-repeat;
       background-size: 100% 100%;

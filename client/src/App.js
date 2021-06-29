@@ -17,9 +17,9 @@ import NCAAF from "./pages/ncaaf";
 import Stats from "./pages/stats";
 import Articles from "./pages/articles";
 import Statstable from "./pages/statstable";
-import PrimaryNavbar from './components/Common/PrimaryNavbar/PrimaryNavbar'
-import SecondaryNavbar from './components/Common/SecondaryNavbar/SecondaryNavbar'
-import ScorecardBar from './components/Common/ScorecardBar/ScorecardBar'
+import PrimaryNavbar from "./components/Common/PrimaryNavbar/PrimaryNavbar";
+import SecondaryNavbar from "./components/Common/SecondaryNavbar/SecondaryNavbar";
+import ScorecardBar from "./components/Common/ScorecardBar/ScorecardBar";
 import Alert from "./components/layout/Alert";
 import Login from "./components/auth/Login";
 import Register from "./components/auth/Register";
@@ -48,10 +48,10 @@ const App = () => {
         <Fragment>
           <div className="App">
             <Header />
-           <Livescores/>
-           <PrimaryNavbar />
-           <ScorecardBar />
-      <SecondaryNavbar />
+            <Livescores />
+            <PrimaryNavbar />
+            <ScorecardBar />
+            <SecondaryNavbar />
             <Route exact path="/" component={Home} />
             <section className="container">
               <Alert />
@@ -68,12 +68,14 @@ const App = () => {
                 <Route exact path="/news" component={News} />
               </Switch>
             </section>
-            <Footer />
           </div>
+          <Footer />
         </Fragment>
       </Router>
     </Provider>
   );
 };
+
+// Restructure to match the components as they were brought in
 
 export default App;

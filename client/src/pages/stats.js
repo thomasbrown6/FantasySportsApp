@@ -1,5 +1,5 @@
 import React from "react";
-import Table from "../components/tabledata";
+import Table from "../components/statsComponents/Table/table";
 import Filter from "../components/statsComponents/Filter/filter";
 
 

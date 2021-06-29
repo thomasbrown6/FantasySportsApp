@@ -1,3 +1,4 @@
+import React from 'react'
 import classes from "./Pages.module.css";
 import Button from "@material-ui/core/Button";
 import Link from "@material-ui/core/Link";
