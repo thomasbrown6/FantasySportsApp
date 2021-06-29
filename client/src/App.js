@@ -46,9 +46,11 @@ const App = () => {
     <Provider store={store}>
       <Router>
         <Fragment>
+        <div className="overLay">
+        <div className="field">
           <div className="App">
-            <Header />
-            <Livescores />
+            {/* <Header />
+            <Livescores /> */}
             <PrimaryNavbar />
             <ScorecardBar />
             <SecondaryNavbar />
@@ -68,6 +70,8 @@ const App = () => {
                 <Route exact path="/news" component={News} />
               </Switch>
             </section>
+          </div>
+          </div>
           </div>
           <Footer />
         </Fragment>

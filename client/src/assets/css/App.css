@@ -598,3 +598,24 @@ justify-content: center;
 }
 
 
+/* Stats Page */
+.overLay {
+  background: url("../images/field.png") no-repeat;
+  background-color: #494949 !important;
+  background-size: 1560px;
+  margin-top: -1px;
+}
+.field {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 1) 35%
+  );
+  border: 1px solid #242424;
+  overflow: hidden;
+  z-index: 2;
+}
+.fieldImage {
+  z-index: 2;
+  position: relative;
+}

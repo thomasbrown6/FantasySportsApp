@@ -5,9 +5,11 @@ import Filter from "../components/statsComponents/Filter/filter";
 
 const Stats = () => {
   return (
-    <div>
+      <div className="overLay">
+        <div className="field">
       <Filter />
       <Table />
+    </div>
     </div>
   );
 };
