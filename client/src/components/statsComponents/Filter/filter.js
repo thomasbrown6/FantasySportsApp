@@ -10,7 +10,7 @@ import Grid from "@material-ui/core/Grid";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 import SearchIcon from "@material-ui/icons/Search";
-import Title from "./title";
+import Title from "./Components/title";
 import {
   position,
   team,
@@ -62,7 +62,7 @@ const useStyles = makeStyles((theme) => ({
 export default function SimpleSelect() {
   const classes = useStyles();
   const [season, setSeason] = React.useState("");
-//   const [yearr, setYear] = React.useState("");
+  const [yearr, setYear] = React.useState("");
   const [live, setLive] = React.useState("default");
   const [from, setFrom] = React.useState("");
   const [to, setTo] = React.useState("");
@@ -83,8 +83,8 @@ export default function SimpleSelect() {
       } else if (event.target.value === "postseason") {
         setToFromData(postSeason);
       }
-    // } else if (event.target.name === "year") {
-    //   setYear(event.target.value);
+    } else if (event.target.name === "year") {
+      setYear(event.target.value);
     } else if (event.target.name === "from") {
       setFrom(event.target.value);
     } else if (event.target.name === "to") {
@@ -152,7 +152,7 @@ export default function SimpleSelect() {
                 name="year"
                 labelId="demo-simple-select-label"
                 id="demo-simple-select"
-                // value={yearr}
+                value={yearr}
                 onChange={handleChange}
               >
                 {years.map((years, index) => (

@@ -1,0 +1,23 @@
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-bottom: 42px;
+  }
+  .menu li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+  }
+  .account {
+    float: right !important;
+  
+    background-color: red !important;
+  }
+  .label {
+    font-size: 12px;
+    color: #3d98d1;
+  }
+  

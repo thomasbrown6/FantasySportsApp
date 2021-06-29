@@ -5,7 +5,7 @@ import "./assets/css/App.css";
 import "./assets/css/App.scss";
 
 import Home from "./pages/home";
-import Footer from "./components/footer";
+import Footer from "./components/Common/Footer/Footer";
 import Navbar from "./components/navbar";
 import Header from "./components/header";
 import News from "./pages/news";
@@ -17,7 +17,9 @@ import NCAAF from "./pages/ncaaf";
 import Stats from "./pages/stats";
 import Articles from "./pages/articles";
 import Statstable from "./pages/statstable";
-
+import PrimaryNavbar from './components/Common/PrimaryNavbar/PrimaryNavbar'
+import SecondaryNavbar from './components/Common/SecondaryNavbar/SecondaryNavbar'
+import ScorecardBar from './components/Common/ScorecardBar/ScorecardBar'
 import Alert from "./components/layout/Alert";
 import Login from "./components/auth/Login";
 import Register from "./components/auth/Register";
@@ -47,6 +49,9 @@ const App = () => {
           <div className="App">
             <Header />
            <Livescores/>
+           <PrimaryNavbar />
+           <ScorecardBar />
+      <SecondaryNavbar />
             <Route exact path="/" component={Home} />
             <section className="container">
               <Alert />

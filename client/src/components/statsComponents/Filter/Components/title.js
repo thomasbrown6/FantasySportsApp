@@ -1,8 +1,8 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
-import player1 from "../assets/images/p1.png";
-import player2 from "../assets/images/p2.png";
+import player1 from "../../../../assets/images/p1.png";
+import player2 from "../../../../assets/images/p2.png";
 const useStyles = makeStyles((theme) => ({
   formControl: {
     margin: theme.spacing(1),

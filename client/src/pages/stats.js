@@ -1,6 +1,7 @@
 import React from "react";
 import Table from "../components/tabledata";
-import Filter from "../components/filter";
+import Filter from "../components/statsComponents/Filter/filter";
+
 
 const Stats = () => {
   return (
