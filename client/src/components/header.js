@@ -1,21 +1,28 @@
-import React from 'react'
-import Navbar from '../components/navbar'
-import Profile from '../pages/profile'
-import Login from '../components/login'
-import Hopkins from '../assets/images/hopkinscatch.jpg'
-import Mahomes from '../assets/images/mahomespass.jpg'
-import Jackson from '../assets/images/lamarjuke.jpg'
-import Henry from '../assets/images/henrystiffarm.jpeg'
-import Subheader from './subheader'
-import PhotoCarousel from './carousel'
+import React from "react";
+import Navbar from "./navbar";
+import Login from "./login";
+import Logo from "./logo";
+import Linebreak from "./linebreak";
 
-class Header extends React.Component{
-    render(){
-        return(
-        <div>
-<PhotoCarousel/>
+class Header extends React.Component {
+  render() {
+    return (
+      <div id="header">
+        <Linebreak color="darkgray" />
+        <div className="row">
+          <div id="loginDiv" className="col-md-2">
+            <Logo />
+          </div>
+          <div className="col-md-8">
+            <Navbar />
+          </div>
+          <div id="profileDiv" className="col-md-2">
+            <Login />
+          </div>
         </div>
-        )
-        }
-    }
+      </div>
+    );
+  }
+}
+
 export default Header;

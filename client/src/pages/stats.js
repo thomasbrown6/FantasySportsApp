@@ -1,13 +1,16 @@
-import React from 'react'
+import React from "react";
+import Table from "../components/statsComponents/Table/table";
+import Filter from "../components/statsComponents/Filter/filter";
 
-class Stats extends React.Component{
-    render(){
-        return(
-            <div>
-<h1>This is where your stats go!</h1>
-            </div>
-        )
-    }
-}
 
+const Stats = () => {
+  return (
+      <div className="overLay">
+        <div className="field">
+      <Filter />
+      <Table />
+    </div>
+    </div>
+  );
+};
 export default Stats;

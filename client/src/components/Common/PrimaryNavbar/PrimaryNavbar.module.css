@@ -1,0 +1,30 @@
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    /* margin-bottom: 35px; */
+  }
+  .menu li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+  }
+  .account {
+    margin-bottom: 100px;
+  }
+  .label {
+    font-size: 12px;
+    color: #3d98d1;
+  }
+  .box {
+    border: 1px solid black;
+    height: 50px;
+    background-color: black;
+  }
+  .divider {
+    border: 1px solid black;
+    background-color: #49494b;
+  }
+  
