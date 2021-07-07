@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize');
-const sequelize = require('../config/sequelize');
+const sequelize = require('../../config/sequelize');
 const { DataTypes } = require('sequelize');
 
 const NcaaGame = sequelize.define(

@@ -5,7 +5,7 @@ const axios = require('axios');
 const { check, validationResult } = require('express-validator');
 
 //Models
-const NcaaGame = require('../../../models/NCAA/NcaaGame');
+const NcaaGame = require('../../../../../models/NCAA/NcaaGame');
 
 const goalserveUrl = `http://www.goalserve.com/getfeed/${config.get(
 	'goalserveApiKey'
@@ -14,89 +14,13 @@ const goalserveUrl = `http://www.goalserve.com/getfeed/${config.get(
 const json = { params: { json: 1 } };
 
 /*********************************************************
- ************ NCAA Scores, Schedules, Standings **********
+ ******************** NCAA FBS Scores ********************
  *********************************************************/
 
-// @route   GET api/football/ncaa/fbs-scores
-// @desc    Get NCAA FBS Scores
-// @access  Public
-router.get('/fbs-scores', async (req, res) => {
-	try {
-		const response = await axios.get(`${goalserveUrl}/fbs-scores`, json);
-
-		if (response.data) {
-			console.log(response.data);
-			return res.status(200).send(response.data);
-		}
-	} catch (err) {
-		console.error(err.message);
-		return res.status(500).send('Server error');
-	}
-});
-
-// @route   GET api/football/ncaa/fbs-scores
-// @desc    Get NCAA FBS Scores
-// @access  Public
-router.get('/fcs-scores', async (req, res) => {
-	try {
-		const response = await axios.get(`${goalserveUrl}/fcs-scores`, json);
-
-		if (response.data) {
-			return res.status(200).send(response.data);
-		}
-	} catch (err) {
-		console.error(err.message);
-		return res.status(500).send('Server error');
-	}
-});
-
-// @route   GET api/football/ncaa/fcs-live-scores
-// @desc    Get NCAA FCS Scores
-// @access  Public
-router.get('/fcs-live-scores', async (req, res) => {
-	try {
-		const response = await axios.get(`${goalserveUrl}/fcs-scores`, json);
-		let data = [];
-
-		response.data.scores.category.match.forEach((match) => {
-			const game = {
-				awayteam: match.awayteam,
-				hometeam: match.hometeam,
-				status: match.status,
-				timeLeft: match.timer,
-				date: match.date
-			};
-			data.push(game);
-		});
-
-		return res.status(200).send(data);
-	} catch (err) {
-		console.error(err.message);
-		return res.status(500).send('Server error');
-	}
-});
-
-// @route   GET api/football/ncaa/div3-scores
+// @route   GET api/football/ncaa/all/scores
 // @desc    Get NCAA Division 3 Scores
 // @access  Public
-router.get('/div3-scores', async (req, res) => {
-	try {
-		const response = await axios.get(`${goalserveUrl}/div3-scores`, json);
-
-		if (response.data) {
-			console.log(response.data);
-			return res.status(200).send(response.data);
-		}
-	} catch (err) {
-		console.error(err.message);
-		return res.status(500).send('Server error');
-	}
-});
-
-// @route   GET api/football/ncaa/all-scores
-// @desc    Get NCAA Division 3 Scores
-// @access  Public
-router.get('/all-scores', async (req, res) => {
+router.get('/all/scores', async (req, res) => {
 	try {
 		const respFBS = await axios.get(`${goalserveUrl}/fbs-scores`, json);
 		const respFCS = await axios.get(`${goalserveUrl}/fcs-scores`, json);
@@ -118,10 +42,10 @@ router.get('/all-scores', async (req, res) => {
 	}
 });
 
-// @route   POST api/football/ncaa/all-scores
+// @route   POST api/football/ncaa/all/scores
 // @desc    Save all NCAA Scores
 // @access  Public
-router.post('/all-scores', async (req, res) => {
+router.post('/all/scores', async (req, res) => {
 	try {
 		const respFBS = await axios.get(`${goalserveUrl}/fbs-scores`, json);
 		const respFCS = await axios.get(`${goalserveUrl}/fcs-scores`, json);
@@ -171,10 +95,10 @@ router.post('/all-scores', async (req, res) => {
 	}
 });
 
-// @route   DELETE api/football/ncaa/all-scores
+// @route   DELETE api/football/ncaa/all/scores
 // @desc    Delete all NCAA Scores
 // @access  Public
-router.delete('/all-scores', async (req, res) => {
+router.delete('/all/scores', async (req, res) => {
 	try {
 		await NCAAGame.destroy({ truncate: true })
 			.then((resp) => {
@@ -216,26 +140,3 @@ router.get('/top25-scores', async (req, res) => {
 		return res.status(500).send('Server error');
 	}
 });
-
-// @route   GET api/football/ncaa/div3-schedule
-// @desc    Get NCAA Div3 Schedule
-// @access  Public
-router.get('/div3-schedule', async (req, res) => {
-	try {
-		const resp = await axios.get(`${goalserveUrl}/div3-schedule`, json);
-
-		let response = {
-			div3Schedule: resp.data
-		};
-
-		if (!response) return res.status(200).send('No data to return');
-
-		console.log(`successful request to get all NCAA Div3 Schedule`);
-		return res.status(200).send(response);
-	} catch (err) {
-		console.error(err.message);
-		return res.status(500).send('Server error');
-	}
-});
-
-module.exports = router;
