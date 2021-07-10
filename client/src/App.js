@@ -50,6 +50,9 @@ const App = () => {
         <div className="overLay">
         <div className="field">
             <Linebreak/>
+            <br></br>
+            <br></br>
+            <br></br>
             <PrimaryNavbar />
             <ScorecardBar />
             <SecondaryNavbar />

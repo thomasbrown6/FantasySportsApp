@@ -22,6 +22,7 @@ import SearchIcon from "@material-ui/icons/Search";
 import MoreIcon from "@material-ui/icons/MoreVert";
 import logo from "../../../assets/images/logo.svg";
 import { Link } from "react-router-dom";
+import Linebreak from "../../../components/linebreak";
 
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -325,6 +326,7 @@ export default function PrimaryNavbar() {
 
   return (
     <div className={classes.grow}>
+      <lineBreak/>
       <div className={classes2.box}></div>
       <Divider className={classes2.divider} />
       <AppBar className={classes.appBar} position="static">
