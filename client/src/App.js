@@ -32,6 +32,7 @@ import store from "./store";
 import { loadUser } from "./actions/auth";
 import setAuthToken from "./utils/setAuthToken";
 import Livescores from "./components/livescores";
+import Linebreak from "./components/linebreak";
 
 if (localStorage.token) {
   setAuthToken(localStorage.token);
@@ -48,12 +49,13 @@ const App = () => {
         <Fragment>
         <div className="overLay">
         <div className="field">
-          <div className="App">
-            {/* <Header />
-            <Livescores /> */}
+            <Linebreak/>
             <PrimaryNavbar />
             <ScorecardBar />
             <SecondaryNavbar />
+          <div className="App">
+            {/* <Header />
+            <Livescores /> */}
             <Route exact path="/" component={Home} />
             <section className="container">
               <Alert />
