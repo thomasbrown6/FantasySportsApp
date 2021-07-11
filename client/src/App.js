@@ -47,15 +47,15 @@ const App = () => {
     <Provider store={store}>
       <Router>
         <Fragment>
+            <PrimaryNavbar />
+            <SecondaryNavbar />
         <div className="overLay">
         <div className="field">
+            <ScorecardBar />
             <Linebreak/>
             <br></br>
             <br></br>
             <br></br>
-            <PrimaryNavbar />
-            <ScorecardBar />
-            <SecondaryNavbar />
           <div className="App">
             {/* <Header />
             <Livescores /> */}

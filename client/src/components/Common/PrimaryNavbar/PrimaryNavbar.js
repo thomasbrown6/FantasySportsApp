@@ -332,7 +332,9 @@ export default function PrimaryNavbar() {
       <AppBar className={classes.appBar} position="static">
         <Toolbar className={classes.bar}>
           <Typography className={classes.title} variant="h6" noWrap>
-            <img id='logo' width="90px" src={logo} alt="logo" />
+         <Link to ='/'>
+           <img id='logo' width="90px" src={logo} alt="logo" />
+           </Link>  
           </Typography>
 
           <div className={classes.sectionDesktop}>
