@@ -21,6 +21,9 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import SearchIcon from "@material-ui/icons/Search";
 import MoreIcon from "@material-ui/icons/MoreVert";
 import logo from "../../../assets/images/logo.svg";
+import { Link } from "react-router-dom";
+import Linebreak from "../../../components/linebreak";
+
 const useStyles = makeStyles((theme) => ({
   grow: {
     flexGrow: 1,
@@ -179,24 +182,33 @@ export default function PrimaryNavbar() {
   );
   const links = (
     <ul className={classes2.menu}>
-      <li>
-        <a href="#">NFL</a>
-      </li>
-      <li>
-        <a href="#">NCAAF</a>
-      </li>
-      <li>
-        <a href="#">STATS</a>
-      </li>
-      <li>
-        <a href="#">FANTASY</a>
-      </li>
-      <li>
-        <a href="#">ARTICLES</a>
-      </li>
-      <li>
-        <a href="#">NEWS</a>
-      </li>
+      <Link to="/nfl">
+        
+          <li>
+            NFL
+            <li />
+          </li>
+      </Link>
+      <Link to="/ncaaf">
+        
+          <li>NCAAF</li>
+      </Link>
+      <Link to="/stats">
+        
+          <li>Stats</li>
+      </Link>
+      <Link to="/fantasy">
+        
+          <li>Fantasy HQ</li>
+      </Link>
+      <Link to="/Articles">
+        
+          <li>Articles</li>
+      </Link>
+      <Link to="/news">
+        
+          <li>News</li>
+      </Link>
       <li>
         <a href="#">HELP</a>
       </li>
@@ -314,12 +326,15 @@ export default function PrimaryNavbar() {
 
   return (
     <div className={classes.grow}>
+      <lineBreak/>
       <div className={classes2.box}></div>
       <Divider className={classes2.divider} />
       <AppBar className={classes.appBar} position="static">
         <Toolbar className={classes.bar}>
           <Typography className={classes.title} variant="h6" noWrap>
-            <img width="70px" src={logo} alt="logo" />
+         <Link to ='/'>
+           <img id='logo' width="90px" src={logo} alt="logo" />
+           </Link>  
           </Typography>
 
           <div className={classes.sectionDesktop}>

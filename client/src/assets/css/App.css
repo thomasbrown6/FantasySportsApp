@@ -68,10 +68,10 @@
 }
 
 #logo{
-  width: 120px;
-position: relative;
-right: 100px;  
-bottom: 10px;
+  width: 70px;
+  position: relative;
+  bottom: 20px;
+
 }
 #carouselHeader{
   filter: grayscale(100%);
