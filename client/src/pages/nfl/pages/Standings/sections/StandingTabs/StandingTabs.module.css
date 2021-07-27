@@ -1,0 +1,47 @@
+.toggleButton {
+    height: 40px !important;
+    width: 200px !important;
+    font-weight: 400 !important;
+    background-color: white !important;
+    color: black !important;
+    transform: skew(-15deg) !important;
+    margin-right: 5px !important;
+  }
+  .toggleButton p {
+    transform: skew(15deg) !important;
+  }
+  .selected {
+    /*  */
+    background: linear-gradient(
+      122deg,
+      rgba(46, 156, 213, 1) 0%,
+      rgba(11, 60, 117, 1) 100%
+    );
+    color: white !important;
+  }
+  .container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ToggleButtonGroup {
+  }
+  /* simpletab css */
+  .simpleTab {
+    background: linear-gradient(
+      122deg,
+      rgba(46, 156, 213, 1) 0%,
+      rgba(11, 60, 117, 1) 100%
+    );
+    color: white;
+    width: 36%;
+    transform: skew(-15deg);
+  }
+  .tabs {
+    transform: skew(15deg);
+    color: white !important;
+  }
+  .indicator {
+    background-color: white !important;
+  }
+  

@@ -1,0 +1,207 @@
+.align {
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1200px;
+  }
+  .table {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .width {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+  .secondHeaderBackground {
+    margin-top: 17px;
+    margin-left: -35px !important;
+    width: 1220px;
+    padding: 9px;
+    position: absolute;
+  }
+  .firstHeaderBackground {
+    margin-top: -22px;
+    margin-left: 575px !important;
+    width: 590px;
+    padding: 12px;
+    position: absolute;
+  }
+  .tableTag {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    position: relative;
+  }
+  
+  .tableTd {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    background-color: #ececec;
+    font-size: 12px;
+    text-align: center;
+  }
+  
+  .secondHeader th {
+    border-right: 1px solid #bdbec0;
+    font-weight: 500;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    padding: 7px;
+  }
+  .firstHeader th {
+    border-right: 1px solid #bdbec0;
+    font-weight: 500;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 8px;
+  }
+  .secondHeader th:nth-child(23),
+  .secondHeader th:nth-child(24) {
+    border-right: 0px solid #0b3c75;
+  }
+  .secondHeader th:nth-child(25) {
+    border-right: 0px solid #0b3c75;
+  }
+  .firstHeader th:nth-child(12) {
+    border-right: 1px solid transparent;
+  }
+  .firstHeader th:nth-child(1),
+  .firstHeader th:nth-child(2) {
+    border-right: 1px solid transparent;
+  }
+  .nameButton {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nameButton Button {
+    margin-top: -4px;
+    height: 21px;
+    width: 90px;
+    background: linear-gradient(
+      0deg,
+      rgba(46, 156, 213, 1) 0%,
+      rgba(11, 60, 117, 1) 100%
+    );
+    color: white !important;
+  }
+  .firstHeader th:nth-child(3),
+  .firstHeader th:nth-child(4),
+  .firstHeader th:nth-child(5),
+  .firstHeader th:nth-child(6),
+  .firstHeader th:nth-child(7),
+  .firstHeader th:nth-child(8) {
+    border-right: none;
+  }
+  .tableTd :nth-child(3) {
+    color: #3d98d1;
+  }
+  .tableTd :nth-child(2) {
+    min-width: 180px;
+  }
+  
+  .tableTd :nth-child(7) {
+    background-color: #175d92;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+  }
+  
+  .tableTd :nth-child(3),
+  .tableTd :nth-child(4),
+  .tableTd :nth-child(5),
+  .tableTd :nth-child(6),
+  .tableTd :nth-child(7),
+  .tableTd :nth-child(8),
+  .tableTd :nth-child(9),
+  .tableTd :nth-child(10),
+  .tableTd :nth-child(11),
+  .tableTd :nth-child(12),
+  .tableTd :nth-child(13),
+  .tableTd :nth-child(14),
+  .tableTd :nth-child(15),
+  .tableTd :nth-child(16),
+  .tableTd :nth-child(17),
+  .tableTd :nth-child(18),
+  .tableTd :nth-child(19),
+  .tableTd :nth-child(20),
+  .tableTd :nth-child(21),
+  .tableTd :nth-child(22) {
+    border-right: 1px solid transparent !important;
+  }
+  .nameCol {
+    text-align: left !important;
+  }
+  .avatar {
+    margin-top: 2px;
+  }
+  
+  .name {
+    color: #3d98d1;
+    font-size: 14px;
+    line-height: 0px;
+    font-weight: 550;
+  }
+  .details {
+    font-size: 13px;
+    line-height: 0px;
+    color: #545457;
+  }
+  @media screen and (max-width: 1280px) {
+    .secondHeaderBackground {
+      display: none;
+    }
+    .firstHeaderBackground {
+      display: none;
+    }
+    .firstHeader {
+      height: 50px !important;
+      background: url("../../../../assets/firstHeader2.svg");
+      background-position: 280px 0px !important;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+    .secondHeader {
+      height: 60px !important;
+      width: 100px !important;
+      background: url("../../../../assets/secondHeader.png");
+      background-position: 0px 0px !important;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+    .secondHeader th:nth-child(1) {
+      background-color: #2a8ec4;
+    }
+    .nameButton {
+      padding-top: 13px;
+    }
+    .nameButton Button {
+      margin-right: 10px;
+    }
+  
+    .firstHeader th:nth-child(2) {
+      background-color: black !important;
+      background: black !important;
+    }
+    .nameButton Button {
+      margin-bottom: -5px;
+      height: 30px;
+      width: 90px;
+    }
+  }
+  @media screen and (max-width: 1150px) {
+    .firstHeader {
+      height: 50px !important;
+      background: url("../../../../assets/firstHeader3.svg");
+      background-position: 250px 0px !important;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+  

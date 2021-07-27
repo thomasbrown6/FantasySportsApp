@@ -1,0 +1,84 @@
+.dateContainer {
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .dateHeader {
+    height: 40px;
+    width: 60%;
+    background: linear-gradient(
+      122deg,
+      rgba(46, 156, 213, 1) 0%,
+      rgba(11, 60, 117, 1) 100%
+    );
+    color: white;
+    transform: skew(-15deg);
+  }
+  .dateHeader p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 35px;
+    transform: skew(15deg);
+  }
+  .matchupFlex {
+    display: flex;
+    /* margin-top: -15px; */
+    margin-bottom: -10px;
+  }
+  .box1 {
+    position: absolute;
+    margin-left: -22px;
+  }
+  .matchupFlex p:last-child {
+    margin-left: 5px;
+  }
+  .teamName {
+    margin-right: 60px;
+    margin-left: 55px;
+  }
+  .spanText {
+    margin-right: 30px;
+    color: #bdbec0;
+  }
+  .boxLogo {
+    position: absolute;
+    margin-left: 25px;
+    margin-top: -38px;
+  }
+  .boxFlex {
+    display: flex;
+    z-index: 99999;
+  }
+  .redBox {
+    height: 35px;
+    width: 10px;
+    margin-top: 1px;
+    margin-left: 1px;
+    background-color: #bb213a;
+    transform: skew(-15deg);
+  }
+  .blueBox {
+    height: 35px;
+    width: 10px;
+    margin-top: 1px;
+    margin-left: 1px;
+    background-color: #0376ab;
+    transform: skew(-15deg);
+  }
+  .whiteBox {
+    height: 40px;
+    width: 60px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transform: skew(-15deg);
+  }
+  .cellColor {
+    color: #3d98d1 !important;
+    font-size: 13px !important;
+  }
+  .cellColor2 {
+    color: #49494b !important;
+    font-size: 13px !important;
+  }
+  

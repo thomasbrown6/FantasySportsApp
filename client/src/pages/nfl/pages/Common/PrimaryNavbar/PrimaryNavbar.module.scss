@@ -1,0 +1,95 @@
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    /* margin-bottom: 35px; */
+  }
+  .menu li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+  }
+  .linkFlex {
+    display: flex !important;
+    justify-content: space-around !important;
+  }
+  .account {
+    margin-bottom: 100px;
+  }
+  .label {
+    font-size: 12px;
+    color: #3d98d1;
+  }
+  .box {
+    border: 1px solid black;
+    height: 50px;
+    background-color: black;
+  }
+  .divider {
+    border: 1px solid black;
+    background-color: #49494b;
+  }
+  
+  /*
+  This is the extracted copied part responsible for showing & hiding the submenu.
+  */
+  
+  .nav__submenu {
+    display: none;
+    list-style: none;
+  }
+  
+  .nav__menuItem:hover {
+    .nav__submenu {
+      display: flex;
+    }
+  }
+  
+  $color-blue: #00aeef;
+  $color-blue-dark: #0d2035;
+  
+  .menu-container {
+    text-align: center;
+  }
+  
+  .nav__menu {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  .nav__menuItem {
+    display: inline-block;
+    position: relative;
+  
+    &:hover {
+      .nav__submenu {
+        display: flex;
+      }
+    }
+  }
+  
+  .nav__submenu {
+    font-weight: 300;
+    font-size: 12px;
+    text-transform: none;
+    display: none;
+    position: absolute;
+    width: 1320px;
+    background-color: #242424;
+    padding-right: 100px;
+    padding-left: 100px;
+    margin-left: -225px;
+    margin-top: -5px;
+  }
+  
+  .nav__submenuItem {
+    &:hover {
+      background: rgba(#000, 0.1);
+    }
+  }
+  .activeNav {
+    color: #3d98d1 !important;
+  }
+  

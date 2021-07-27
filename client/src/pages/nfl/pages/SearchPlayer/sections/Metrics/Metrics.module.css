@@ -1,0 +1,147 @@
+.metricsMain {
+    margin-top: 100px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .metricsBox {
+    background: white;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .metricsBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .breadCrumb {
+    display: flex;
+    align-items: center;
+  }
+  .nextText {
+    text-transform: uppercase;
+  }
+  .nextIcon {
+    /* font-size: 12px; */
+    font-weight: 600;
+  }
+  .nextGroup {
+    color: #3d98d1;
+  }
+  .breadRoundedBox {
+    border-radius: 25px;
+    background: #49494b;
+    color: #bdbec0;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin-left: 20px;
+  }
+  
+  /* Date toggle css */
+  .toggleButton1 {
+    height: 30px !important;
+    width: 150px !important;
+    font-weight: 400 !important;
+    background-color: #49494b !important;
+    color: #bdbec0 !important;
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+  }
+  .toggleButton2 {
+    height: 30px !important;
+    width: 150px !important;
+    font-weight: 400 !important;
+    background-color: #49494b !important;
+    color: #bdbec0 !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+  }
+  .selected {
+    /*  */
+    background: linear-gradient(
+      122deg,
+      rgba(46, 156, 213, 1) 0%,
+      rgba(11, 60, 117, 1) 100%
+    );
+    color: white !important;
+  }
+  
+  /* Metric Toggle css */
+  .metricToggle {
+    height: 40px !important;
+    width: 200px !important;
+    font-weight: 400 !important;
+    background-color: white !important;
+    color: black !important;
+    transform: skew(-15deg);
+    text-transform: uppercase;
+  }
+  .metricToggle p {
+    transform: skew(15deg);
+  }
+  .metricSelected {
+    background: linear-gradient(
+      122deg,
+      rgba(46, 156, 213, 1) 0%,
+      rgba(11, 60, 117, 1) 100%
+    );
+    color: white !important;
+  }
+  
+  /* Metrics table css */
+  .metricTableMain {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .tableHeadFlex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .tableHeadLeft {
+    display: flex;
+    align-items: center;
+  }
+  .tableHeadLeft p {
+    text-transform: uppercase;
+    color: #3d98d1;
+  }
+  .tableHeadRight p {
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #3d98d1;
+  }
+  .blueBox {
+    margin-right: 15px;
+    margin-left: -10px;
+    height: 20px;
+    width: 10px;
+    background: #3d98d1;
+  }
+  .metricsTable {
+  }
+  .table {
+    width: 100%;
+  }
+  .table,
+  .trHead th,
+  .trData td {
+    border: 1px solid #bdbec0;
+    border-collapse: collapse;
+  }
+  .trHead {
+    height: 45px;
+    background-color: #f8f8f8;
+  }
+  .trHead th {
+    font-weight: 500 !important;
+    font-size: 14px;
+  }
+  .trData {
+    height: 70px;
+    text-align: center;
+    color: #49494b;
+  }
+  

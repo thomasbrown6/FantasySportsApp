@@ -1,0 +1,103 @@
+.tableHeaderPara {
+    height: 50px;
+    width: 100%;
+    background: linear-gradient(
+      122deg,
+      rgba(46, 156, 213, 1) 0%,
+      rgba(11, 60, 117, 1) 100%
+    );
+    transform: skew(-30deg);
+    color: white;
+  }
+  .paraContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .tableHeaderPara h4 {
+    font-weight: 450 !important;
+    transform: skew(30deg);
+    font-size: 12px;
+    /* width: 100%; */
+  }
+  .tableWidth {
+    max-width: 880px !important;
+  }
+  .main {
+    margin-bottom: 100px;
+  }
+  .box {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .cardFlex {
+    display: flex;
+    margin-left: -50px;
+    margin-top: 5px;
+    line-height: 10px;
+    text-align: left;
+  }
+  .cardFlex p,
+  .cardFlex div {
+    margin-right: 10px;
+    color: #49494b;
+  }
+  .cardFlex p {
+    font-size: 12px;
+  }
+  .circularBorder {
+    width: 23px;
+    height: 23px;
+    line-height: 23px;
+    border-radius: 50%;
+    font-size: 10px;
+    color: #bdbec0;
+    text-align: center;
+    border: 1px solid #bdbec0;
+  }
+  .nameText {
+    line-height: 25px;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .secondCardFlex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .secondCardFlex2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .verticalLine {
+    border-right: 1px solid black;
+    height: 70px;
+  }
+  .followButton {
+    border-radius: 25px !important;
+    color: #3d98d1 !important;
+    border-color: #3d98d1 !important;
+    font-size: 12px;
+  }
+  .secondCardFlex2 p:first-child {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 0px;
+    text-align: right;
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+  .secondCardFlex2 p:last-child {
+    color: #49494b;
+    font-size: 12px;
+  }
+  .tablePagination {
+    text-align: center !important;
+    display: flex;
+  
+    /* width: 50%;
+    margin-left: auto;
+    margin-right: auto; */
+  }
+  

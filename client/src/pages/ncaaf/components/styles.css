@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker|Rock+Salt");
+
+ .player {
+	display: flex;
+	position: absolute;
+    left: 25%;
+    top: 95pc;
+    width: 45pc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    /* background-color: #212527; */
+}
+
+
+
+
+ .player .song {
+	 user-select: none;
+	 margin: 0 20px;
+}
+ .player .song .song__title {
+	 text-align: left;
+	 margin: 0;
+	 color: white;
+	 font-family: 'Montserrat';
+	 font-weight: normal;
+	 font-size: 1.5em;
+	 position: absolute;
+    top: -58%;
+    left: 11%;
+}
+ .player .song .song__title:hover {
+	 color: greenyellow;
+}
+ .player .song .song__artist {
+	 margin: 0;
+	 color: white;
+	 font-family:'Montserrat';
+	 font-weight: normal;
+	 font-size: 1em;
+	 position: absolute;
+    top: 0%;
+    left: 11%;
+}
+ .player .song .song__artist:hover {
+	 color: greenyellow;
+	 cursor: pointer;
+}
+ .player .controls {
+	 flex-grow: 1;
+	 margin: 0 20px;
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: center;
+	 align-items: center;
+}
+.player .player__button {
+ 
+    width: 2px;
+    margin-bottom: 15px;
+    background-color: transparent;
+    position: absolute;
+    border: none;
+    left: 0%;
+}
+ .player .player__button:focus {
+	 outline: none;
+}
+ .player .player__button:hover {
+	 cursor: pointer;
+	color: #00a1ff;
+}
+ .player .player__button:hover svg {
+	 color: #00a1ff;
+}
+ .player .player__button svg {
+	 font-size: 4em;
+	 color: #ffffff;
+}
+ .player .bar {
+	 user-select: none;
+	 width: 100%;
+	 display: flex;
+	 align-items: center;
+}
+ .player .bar .bar__time {
+	 color: white;
+	 font-size: 16px;
+	 position: absolute;
+    bottom: -10px;
+	left: 11%;
+}
+.readimg{
+	position: absolute;
+    top: -58%;
+    left: -19px;
+    width: 18px;
+}
+.readimgsize{
+	width: 75px;
+}
+ .player .bar .bar__time2 {
+	 color: white;
+	 font-size: 16px;
+	 position: absolute;
+	 bottom: -10px;
+	right: 5.5%;
+}
+ .download {
+	position: absolute;
+    top: -44%;
+    right: 13%;
+}
+ .heart {
+	position: absolute;
+    top: -44%;
+    right: 9%;
+}
+ .volume {
+	position: absolute;
+    top: -46%;
+    right: 5.8%;
+}
+ .player .bar .bar__progress {
+	 flex: 1;
+	 border-radius: 5px;
+	 margin: 0 20px;
+	 height: 3px;
+	 display: flex;
+	 background-color: #00a1ff;
+	 align-items: center;
+	 cursor: pointer;
+}
+ .player .bar__progress {
+	 flex: 1;
+	 border-radius: 5px;
+	 margin: 0 20px;
+	 height: 3px;
+	 display: flex;
+	 background-color: #00a1ff;
+	 align-items: center;
+	 cursor: pointer;
+}
+
+ .player .bar .bar__progress .bar__progress__knob {
+	 position: relative;
+	 height: 16px;
+	 width: 16px;
+	 border: 1.5px solid white;
+	 border-radius: 50%;
+	 background-color: #00a1ff;
+}
+ @media screen and (max-width: 800px) {
+	 .player {
+		 flex-direction: column;
+	}
+	 .player .controls {
+		 width: 100%;
+		 margin-top: 20px;
+	}
+	 .player .bar {
+		 width: 90%;
+	}
+}
+ @media screen and (max-width: 500px) {
+	 .player .song .song__title {
+		 font-size: 2.5em;
+	}
+	 .player .song .song__artist {
+		 font-size: 0.8em;
+	}
+}
+ 

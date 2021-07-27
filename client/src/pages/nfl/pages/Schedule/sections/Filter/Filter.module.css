@@ -1,0 +1,15 @@
+.selectFlex {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: -20px;
+    flex-wrap: wrap;
+  }
+  .selectFlex div {
+    /* width: 100%; */
+  }
+  .container {
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  

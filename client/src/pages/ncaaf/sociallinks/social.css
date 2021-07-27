@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'MontserratBoldItalic';
+    src: url('../font/Montserrat-BoldItalic.ttf');
+}
+
+.socialbtns{
+    display: grid;
+    position: absolute;
+    left: 2%;
+    bottom: -31pc;
+
+    
+}
+.links{
+    position: absolute;
+    left: 1%;
+    bottom: -23pc;
+    width: 250px;
+}
+
+.follow{
+    font-family: 'MontserratBoldItalic';
+    position: absolute;
+    left: 2.7%;
+    bottom: -21pc;
+    font-size: 17px;
+}
+.threedots{
+    
+    position: absolute;
+    left: 2.7%;
+    bottom: -21pc;
+}
+
+.fa-facebook-f:before, .fa-facebook:before {
+    content: "\f09a";
+    margin-right: 18px;
+}
+
+.fa-twitter-f:before, .fa-twitter:before {
+    
+    margin-right: 11px;
+}
+.fa-youtube-f:before, .fa-youtube:before {
+   
+    margin-right: 11px;
+}
+.fa-instagram-f:before, .fa-instagram:before {
+  
+    margin-right: 11px;
+}
+.fa-snapchat-f:before, .fa-snapchat:before {
+  
+    margin-right: 11px;
+}
+
+
+
+.socialbtns li {
+   
+    display: grid;
+}
+
+.socialbtns .fa {
+    color: #FFF;
+    text-shadow: 1px 1px 0px #000,
+    1px -1px 0px #000,
+    -1px 1px 0px #000,
+    -1px -1px 0px #000;
+    -webkit-text-shadow: 1px 1px 0px #000,
+    1px -1px 0px #000,
+    -1px 1px 0px #000,
+    -1px -1px 0px #000;
+    -moz-text-shadow: 1px 1px 0px #000,
+            1px -1px 0px #000,
+            -1px 1px 0px #000,
+            -1px -1px 0px #000;
+            -o-text-shadow: 1px 1px 0px #000,
+            1px -1px 0px #000,
+            -1px 1px 0px #000,
+            -1px -1px 0px #000;
+            transition: all ease-out 0.5s;
+            -moz-transition: all ease-out 0.5s;
+            -webkit-transition: all ease-out 0.5s;
+            -o-transition: all ease-out 0.5s;
+        }
+        
+        .socialbtns .fa:hover {
+            color: #000;
+            text-shadow: 1px 1px 0px #fff,
+            1px -1px 0px #fff,
+            -1px 1px 0px #fff,
+            -1px -1px 0px #fff;
+            -webkit-text-shadow: 1px 1px 0px #fff,
+            1px -1px 0px #fff,
+            -1px 1px 0px #fff,
+            -1px -1px 0px #fff;
+    -moz-text-shadow: 1px 1px 0px #fff,
+            1px -1px 0px #fff,
+            -1px 1px 0px #fff,
+            -1px -1px 0px #fff;
+    -o-text-shadow: 1px 1px 0px #fff,
+            1px -1px 0px #fff,
+            -1px 1px 0px #fff,
+            -1px -1px 0px #fff;
+    transition: all ease 0.5s;
+    -moz-transition: all ease-in 0.5s;
+    -webkit-transition: all ease-in 0.5s;
+    -o-transition: all ease-in 0.5s;
+}

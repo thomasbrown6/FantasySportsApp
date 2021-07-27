@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'MontserratMedium';
+    src: url('../font/Montserrat-Medium.ttf');
+}
+
+
+body {
+    background: black;
+   
+    color: white;
+    
+   
+}
+
+.font-italic2 {
+    font-family: 'MontserratMedium';
+    
+    font-size: 15px;
+    width: 160px;
+    margin-bottom: 0%;
+    margin-left: 12px;
+}
+
+
+
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 26px;
+    left: 0;
+    z-index: 15;
+ 
+  
+}
+
+
+.carousel-indicators li {
+    border: none;
+    opacity: 1;
+    width: 13px;
+    height: 6px;
+    border-radius: 1px;
+    content: '';
+    background:white;
+    color:white;
+    -webkit-transform: skew(-30deg);
+    -moz-transform: skew(-30deg);
+    -o-transform: skew(-30deg);
+}
+
+
+.carousel-indicators .active {
+    border: none;
+    border-radius: 1px;
+    width: 12px;
+    height: 7.23px;
+    background: #3D98D1;
+    opacity: 1;
+    content: '';
+    -webkit-transform: skew(-30deg);
+    -moz-transform: skew(-30deg);
+    -o-transform: skew(-30deg);
+
+}

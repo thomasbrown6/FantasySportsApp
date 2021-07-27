@@ -1,0 +1,50 @@
+body {
+    background: black;
+   
+    color: white;
+    
+   
+}
+.font-italic {
+    font-style: italic !important;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+    width: 190px;
+    margin-bottom: 0%;
+}
+.p-5 {
+    padding: 3rem!important;
+    width: 238px;
+}
+
+.text-lg {
+    font-size: 2rem;
+}
+
+.carousel-indicators li {
+    border: none;
+    width: 13px;
+    height: 6px;
+    border-radius: 1px;
+    content: '';
+    background:#FFFFFF;
+    color:#FFFFFF;
+    -webkit-transform: skew(-30deg);
+    -moz-transform: skew(-30deg);
+    -o-transform: skew(-30deg);
+}
+
+
+.carousel-indicators .active {
+    border: none;
+    border-radius: 1px;
+    width: 12px;
+    height: 7.23px;
+    background: #3D98D1;
+    content: '';
+    -webkit-transform: skew(-30deg);
+    -moz-transform: skew(-30deg);
+    -o-transform: skew(-30deg);
+
+}

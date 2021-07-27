@@ -1,0 +1,40 @@
+.pages {
+    margin-bottom: 100px;
+    margin-top: 50px;
+  }
+  .flex {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .item {
+    flex: 0 0 0.5%;
+    text-decoration: none;
+    text-align: center;
+    color: white !important;
+    margin: 1px; /* and that, will result in a 10px gap */
+  }
+  .itemBold {
+    flex: 0 0 0.5%;
+    text-decoration: underline;
+    text-align: center;
+    color: white !important;
+    margin: 1px; /* and that, will result in a 10px gap */
+    font-weight: 1000;
+  }
+  .buttonDiv {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .button {
+    background: linear-gradient(
+      142deg,
+      rgba(0, 156, 199, 1) 0%,
+      rgba(0, 91, 142, 1) 100%
+    );
+    color: white !important;
+    font-weight: 400 !important;
+    border-radius: 15px !important;
+    width: 200px !important;
+  }
+  

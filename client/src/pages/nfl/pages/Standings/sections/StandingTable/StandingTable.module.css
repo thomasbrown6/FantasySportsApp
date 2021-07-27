@@ -1,0 +1,75 @@
+.dateHeader {
+    height: 40px;
+    width: 60%;
+    background: linear-gradient(
+      122deg,
+      rgba(46, 156, 213, 1) 0%,
+      rgba(11, 60, 117, 1) 100%
+    );
+    color: white;
+    transform: skew(-15deg);
+  }
+  .dateHeader p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 35px;
+    transform: skew(15deg);
+  }
+  .matchupFlex {
+    display: flex;
+    /* margin-top: -15px; */
+    margin-bottom: -10px;
+  }
+  .box1 {
+    position: absolute;
+    margin-left: -22px;
+  }
+  .teamName {
+    padding-left: 50px;
+  }
+  .matchupFlex p:last-child {
+    margin-left: 5px;
+  }
+  .boxLogo {
+    position: absolute;
+    margin-left: 25px;
+    margin-top: -38px;
+  }
+  .boxFlex {
+    display: flex;
+  }
+  .box {
+    height: 35px;
+    width: 10px;
+    margin-top: 1px;
+    margin-left: 1px;
+    transform: skew(-15deg);
+  }
+  
+  .whiteBox {
+    height: 40px;
+    width: 60px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transform: skew(-15deg);
+  }
+  .borderRight {
+    border-right: 0.5px solid #bdbec0 !important;
+  }
+  .cellColor {
+    color: #bdbec0 !important;
+  }
+  .cellColor2 {
+    color: #49494b !important;
+    background-color: #e9f7ff;
+  }
+  .cellColor2:nth-child(1) {
+    background-color: red !important;
+  }
+  .redColor {
+    color: red !important;
+  }
+  .greenColor {
+    color: green !important;
+  }
+  

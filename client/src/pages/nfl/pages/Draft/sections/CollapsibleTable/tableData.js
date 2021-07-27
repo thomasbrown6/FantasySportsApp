@@ -1,0 +1,47 @@
+function createData(rk, player, school, pos) {
+    return {
+      rk,
+      player,
+      school,
+      pos,
+      history: [
+        { date: "2020-01-05", customerId: "11091700", amount: 3 },
+        { date: "2020-01-02", customerId: "Anonymous", amount: 1 },
+      ],
+    };
+  }
+  export const tableData = [
+    createData(1, "Trevor Lawrence", "Clemson", "QB"),
+    createData(1, "Trevor Lawrence", "Clemson", "QB"),
+    createData(1, "Trevor Lawrence", "Clemson", "QB"),
+    createData(1, "Trevor Lawrence", "Clemson", "QB"),
+    createData(1, "Trevor Lawrence", "Clemson", "QB"),
+    createData(1, "Trevor Lawrence", "Clemson", "QB"),
+    createData(1, "Trevor Lawrence", "Clemson", "QB"),
+    createData(1, "Trevor Lawrence", "Clemson", "QB"),
+    createData(1, "Trevor Lawrence", "Clemson", "QB"),
+    createData(1, "Trevor Lawrence", "Clemson", "QB"),
+    createData(1, "Trevor Lawrence", "Clemson", "QB"),
+    createData(1, "Trevor Lawrence", "Clemson", "QB"),
+    createData(1, "Trevor Lawrence", "Clemson", "QB"),
+    createData(1, "Trevor Lawrence", "Clemson", "QB"),
+    createData(1, "Trevor Lawrence", "Clemson", "QB"),
+    createData(1, "Trevor Lawrence", "Clemson", "QB"),
+    createData(1, "Trevor Lawrence", "Clemson", "QB"),
+    createData(1, "Trevor Lawrence", "Clemson", "QB"),
+    createData(1, "Trevor Lawrence", "Clemson", "QB"),
+    createData(1, "Trevor Lawrence", "Clemson", "QB"),
+    createData(1, "Trevor Lawrence", "Clemson", "QB"),
+    createData(1, "Trevor Lawrence", "Clemson", "QB"),
+    createData(1, "Trevor Lawrence", "Clemson", "QB"),
+    createData(1, "Trevor Lawrence", "Clemson", "QB"),
+    createData(1, "Trevor Lawrence", "Clemson", "QB"),
+    createData(1, "Trevor Lawrence", "Clemson", "QB"),
+    createData(2, "Trsssevor Lawrence", "Clemson", "QB"),
+    createData(3, "Trevor Lawrence", "Clemson", "QB"),
+    createData(4, "Trevor Lawrence", "Clemson", "QB"),
+    createData(1, "Trevor Lawrence", "Clemson", "QB"),
+    createData(1, "Trevor Lawrence", "Clemson", "QB"),
+    createData(1, "Trevor Lawrence", "Clemson", "QB"),
+  ];
+  

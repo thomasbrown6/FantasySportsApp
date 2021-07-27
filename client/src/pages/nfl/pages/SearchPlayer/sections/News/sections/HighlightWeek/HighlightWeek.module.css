@@ -1,0 +1,82 @@
+.hwDiv {
+    display: flex;
+    width: 92%;
+  }
+  .hwDiv h2 {
+  }
+  .arrow {
+    font-size: 25px !important;
+    margin-left: 30px;
+    color: white;
+    margin-top: 45px;
+  }
+  .arrow div {
+    padding-bottom: 15px;
+  }
+  /* MainWeek css */
+  .mainWeekImage {
+  }
+  .mainWeekText {
+    color: white;
+    width: 80%;
+  }
+  .mainWeekText p {
+    font-size: 16px;
+    line-height: 0px;
+  }
+  .mainWeekText h2 {
+    font-weight: 400;
+    font-size: 23px;
+  }
+  
+  /* Slideweek css */
+  .slideImageItem {
+    position: relative !important;
+    display: inline-block !important;
+  }
+  .slideWeekOverlayText {
+    font-size: 14px;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    width: 85%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  .overlayColor {
+    background: linear-gradient(
+      180deg,
+      rgba(26, 46, 104, 0) 0%,
+      rgba(17, 30, 69, 0.68) 43%,
+      rgba(13, 23, 52, 1) 100%
+    );
+    position: absolute;
+    height: 100%;
+    width: 95%;
+    margin-top: -160px;
+  }
+  .overlayColor2 {
+    background: linear-gradient(
+      180deg,
+      rgba(26, 46, 104, 0.616) 0%,
+      rgba(0, 123, 180, 0.548) 100%
+    );
+    position: absolute;
+    height: 100%;
+    width: 95%;
+    margin-top: -214px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .slideLink {
+    color: white !important;
+    text-decoration: none !important;
+    text-transform: uppercase;
+  }
+  .slideLinkDiv {
+    text-align: end;
+    padding-top: 10px;
+  
+    /* margin-right: 30px; */
+  }
+  

@@ -1,0 +1,94 @@
+/* MainPlayer css */
+.mainPlayerImageContainer {
+    position: relative;
+    display: inline-block;
+  }
+  .mainPlayerText {
+    position: absolute;
+    top: 80%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  .mainPlayerText h2 {
+    /* line-height: 10px; */
+    margin-bottom: -15px;
+  }
+  .mainPlayerText p {
+    width: 70%;
+  }
+  .mainImageTag {
+    height: 99%;
+    width: 95%;
+    border-radius: 15px;
+    position: absolute;
+    top: 49.3%;
+    left: 47.4%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.274) !important;
+  }
+  .mainIconDiv {
+    display: flex !important;
+    position: absolute;
+    top: 92%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  .mainIconDiv div {
+    padding-left: 15px;
+  }
+  /* SecondaryCard css */
+  .cardIconDiv {
+    display: flex !important;
+    position: absolute;
+    top: 85%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  .cardIconDiv div {
+    padding-left: 15px;
+  }
+  .secondaryCardMain {
+    margin-top: 30px;
+  }
+  .cardContainer {
+    position: relative;
+    display: inline-block;
+    margin-top: 25px;
+  }
+  .cardText {
+    position: absolute;
+    top: 40%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  .cardText h2 {
+    margin-bottom: -10px;
+  }
+  .cardText p {
+    width: 80%;
+    line-height: 10px;
+  }
+  .cardOverlay {
+    height: 99%;
+    width: 95%;
+    border-radius: 15px;
+    position: absolute;
+    top: 48%;
+    left: 47.4%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.274) !important;
+  }
+  .cardLink {
+    color: white !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+  }
+  .cardLinkDiv {
+    text-align: end;
+    margin-right: 30px;
+  }
+  

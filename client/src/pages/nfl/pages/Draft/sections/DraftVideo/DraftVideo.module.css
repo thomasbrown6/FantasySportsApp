@@ -1,0 +1,79 @@
+.main {
+    color: white;
+    margin-left: 30px;
+  }
+  .main h2:first-child {
+    text-transform: uppercase;
+  }
+  .icon {
+    margin-top: -10px;
+  }
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .thumbBox {
+    border: 1px solid black;
+    background-color: #303030;
+    /* width: 355px; */
+    height: 90px;
+    border-radius: 10px;
+    margin-top: 40px;
+  }
+  .imageThumb {
+    position: relative;
+    margin-top: -10px;
+  }
+  .boxText p:first-child {
+    line-height: 5px;
+    font-size: 9px;
+  }
+  .boxText p:last-child {
+    line-height: 15px;
+    font-size: 10px;
+  }
+  .boxText h2 {
+    line-height: 5px;
+    font-size: 14px;
+  }
+  .boxText {
+    width: 58% !important;
+  }
+  
+  /* headlines css */
+  .headMain {
+    margin-top: 50px;
+  }
+  .paraBox {
+    height: 50px;
+    transform: skew(-15deg);
+    background: rgb(46, 156, 213);
+    background: linear-gradient(
+      140deg,
+      rgba(46, 156, 213, 1) 0%,
+      rgba(11, 60, 117, 1) 100%
+    );
+    width: 90%;
+    padding-left: 20px;
+  }
+  .paraText {
+    transform: skew(15deg);
+  }
+  .iconFlex {
+    display: flex;
+  }
+  .paraWhite {
+    height: 7.16px;
+    width: 14.32px;
+    background: white;
+    transform: skew(-25deg);
+  }
+  .paraBlue {
+    height: 7.16px;
+    width: 14.32px;
+    background: #3d98d1;
+    transform: skew(-25deg);
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  

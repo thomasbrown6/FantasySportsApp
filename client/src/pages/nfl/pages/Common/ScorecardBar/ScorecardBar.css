@@ -1,0 +1,176 @@
+/* .nav__container {
+  background-color: #2b2c2d;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.nav__container .nav__content {
+  width: 1025px;
+  margin: 0 auto;
+  display: flex;
+}
+.nav__container .logo__container {
+  background: #db0b17;
+  box-sizing: border-box;
+  width: 125px;
+  transform: skew(-25deg, 0);
+  border-right: 10px solid #b40000;
+  border-left: 10px solid #b40000;
+}
+@media (max-width: 576px) {
+  .nav__container .logo__container {
+    margin-left: -1.25rem;
+  }
+}
+.nav__container ul {
+  list-style-type: none;
+  overflow: hidden;
+  display: flex;
+}
+.nav__container li {
+  color: #7a1818;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 12px;
+  margin-right: 1.5rem;
+  transition: all 0.25s ease;
+}
+.nav__container p {
+  color: white;
+}
+.nav__items:hover > li {
+  color: rgba(255, 255, 255, 0.5);
+}
+.nav__items:hover > li:hover {
+  color: white;
+} */
+.scoreboard__container {
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+    background-color: rgb(0, 0, 0, 0.6) !important;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 35px;
+    transform: skew(-30deg);
+  }
+  .opposit__scoreboard__container {
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+    background-color: rgb(0, 0, 0, 0.6) !important;
+    margin-left: 15px;
+    transform: skew(30deg);
+  }
+  .scoreboard__container::-webkit-scrollbar {
+  }
+  @media (max-width: 576px) {
+    .scoreboard__container {
+      display: flex;
+    }
+  }
+  .game__container {
+    padding: 0.3rem;
+    background-color: black;
+    border-right: 1px solid #707070;
+    font-size: 9px;
+    color: white;
+    transform: skew(30deg);
+  }
+  .game__container2 {
+    padding: 0.3rem;
+    background-color: black;
+    border-right: 1px solid transparent;
+    font-size: 9px;
+    color: white;
+    margin: auto;
+    transform: skew(30deg);
+  }
+  .game__container3 {
+    padding: 0.3rem;
+    border-right: 1px solid transparent;
+    font-size: 9px;
+    color: white;
+    margin: auto;
+    transform: skew(30deg);
+  }
+  .game__container4 {
+    padding: 0.3rem;
+    border-right: 1px solid #707070;
+    font-size: 9px;
+    color: white;
+    transform: skew(30deg);
+  }
+  .game__container__title {
+    text-transform: uppercase;
+    color: #3d98d1;
+    background-color: transparent !important;
+  }
+  .game__container__title__main {
+    text-transform: uppercase;
+    color: #3d98d1;
+  }
+  @media (max-width: 576px) {
+  }
+  .info-split {
+    display: flex;
+    align-items: center;
+  }
+  .game__in-progress {
+    padding-left: 0.3rem;
+    margin-left: 0.3rem;
+    border-left: 1px solid #ddd;
+    line-height: 1.5;
+    font-size: 7px;
+  }
+  .game__top-bar {
+    display: flex;
+  }
+  .game__top-bar .game__channel {
+    margin-left: auto;
+    color: #6d6e70;
+  }
+  .game__time {
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    font-weight: bold;
+  }
+  .game__time.in-progress {
+    color: #db0b17;
+  }
+  .team__container {
+    width: 95px;
+  }
+  @media (max-width: 576px) {
+    .team__container {
+      width: 60%;
+    }
+  }
+  .team {
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    width: 95%;
+  }
+  .team__logo {
+    width: auto;
+    height: 1.35rem;
+    margin-right: 0.5rem;
+  }
+  .team__score {
+    font-weight: bold;
+    margin-left: auto;
+  }
+  .losing-team {
+    opacity: 0.4;
+  }
+  .hide {
+    display: none;
+  }
+  .iconButton {
+    color: white !important;
+    transform: skew(30deg);
+  }
+  

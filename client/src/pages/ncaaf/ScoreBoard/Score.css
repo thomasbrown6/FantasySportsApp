@@ -1,0 +1,463 @@
+@font-face {
+    font-family: 'MontserratRegular';
+    src: url('../font/Montserrat-Regular.ttf');
+ }
+ @font-face {
+    font-family: 'MontserratLight';
+    src: url('../font/Montserrat-Light.ttf');
+ }
+ @font-face {
+    font-family: 'TitilliumWebRegular';
+    src: url('../font/TitilliumWeb-Regular.ttf');
+ }
+ @font-face {
+    font-family: 'TitilliumWebLight';
+    src: url('../font/TitilliumWeb-Light.ttf');
+ }
+ @font-face {
+    font-family: 'TitilliumWebBoldItalic';
+    src: url('../font/TitilliumWeb-BoldItalic.ttf');
+ }
+ @font-face {
+    font-family: 'TitilliumWebSemiBold';
+    src: url('../font/TitilliumWeb-SemiBold.ttf');
+ }
+ 
+ .scoreleft{
+    position: absolute;
+    font-family: 'MontserratRegular';
+    font-size:12px; top:80%;
+    left: 10%;
+ }
+ 
+ .scoreText1{
+    
+    position: absolute;
+    font-family: 'MontserratLight';
+    
+    left:22%;
+    bottom:-30%;
+ }
+ .scoreText2{
+    
+    position: absolute;
+    font-family: 'MontserratLight';
+    
+    left:22%;
+    bottom:-90.3%;
+ }
+ .scoreText3{
+    
+    position: absolute;
+    font-family: 'MontserratLight';
+    
+    left:22%;
+    bottom:-150%;
+ }
+ .scoreText4{
+    
+    position: absolute;
+    font-family: 'MontserratLight';
+    
+    left:22%;
+    bottom:-210%;
+ }
+ .scoreText5{
+    
+    position: absolute;
+    font-family: 'MontserratLight';
+    
+    left:22%;
+    bottom:-270%;
+ }
+ .flag1{
+    position: relative;
+    right: -2pc;
+    top: 0%;
+ }
+ .flag2{
+    position: relative;
+    right: -2pc;
+    top: 10%;
+ }
+ .flag3{
+    position: relative;
+    right: -2pc;
+    top: 0%;
+ }
+ .flag4{
+    position: relative;
+    right: -2pc;
+    top: 0%;
+ }
+ .flag5{
+    position: relative;
+    right: -2pc;
+    top: 50%;
+ }
+ .flag6{
+    position: relative;
+    right: -2pc;
+    top: 60%;
+ }
+ .flag7{
+    position: relative;
+    right: -2pc;
+    top: 70%;
+ }
+ .flag8{
+    position: relative;
+    right: -2pc;
+    top: 80%;
+ }
+ .flagtext1{
+    font-family: 'MontserratRegular';
+    position: relative;
+    right: -7.4pc;
+    width: 200px;
+    top: 1.2pc;
+ }
+ .flagtext2{
+    font-family: 'MontserratRegular';
+    position: relative;
+    right: -7.4pc;
+    width: 200px;
+    top: 4pc;
+ }
+ .flagtext7{
+    font-family: 'MontserratRegular';
+    position: relative;
+    right: -7.4pc;
+    width: 100px;
+    top: 7pc;
+ }
+ .flagtext6{
+    font-family: 'MontserratRegular';
+    position: relative;
+    right: -7.4pc;
+    width: 100px;
+    top: 9.6pc;
+ }
+ .flagtext11{
+    font-family: 'MontserratRegular';
+    position: relative;
+    right: -7.4pc;
+    width: 100px;
+    top: 12.3pc;
+ }
+ .flagtext12{
+    font-family: 'MontserratRegular';
+    position: relative;
+    right: -7.4pc;
+    width: 100px;
+    top: 15pc;
+ }
+ .flagtext13{
+    font-family: 'MontserratRegular';
+    position: relative;
+    right: -7.4pc;
+    width: 100px;
+    top: 18pc;
+ }
+ .flagtext14{
+    font-family: 'MontserratRegular';
+    position: relative;
+    right: -7.4pc;
+    width: 100px;
+    top: 21pc;
+ }
+ .flagtext17{
+    font-family: 'MontserratRegular';
+    position: relative;
+    right: -11.7pc;
+    width: 100px;
+    top: 12.4pc;
+ }
+ .flagtext18{
+    font-family: 'MontserratRegular';
+    position: relative;
+     right: -11.7pc;
+    width: 100px;
+    top: 15pc;
+ }
+ .flagtext19{
+    font-family: 'MontserratRegular';
+    position: relative;
+     right: -11.7pc;
+    width: 100px;
+    top: 18.14pc;
+ }
+ .flagtext20{
+    font-family: 'MontserratRegular';
+    position: relative;
+     right: -11.7pc;
+    width: 100px;
+    top: 21pc;
+ }
+ .flagtext15{
+    font-family: 'MontserratRegular';
+    position: relative;
+     right: -11.7pc;
+    width: 100px;
+    top: 12.4pc;
+ }
+ .flagtext16{
+    font-family: 'MontserratRegular';
+    position: relative;
+     right: -11.7pc;
+    width: 100px;
+    top: 15pc;
+ }
+ .flagtext8{
+    font-family: 'MontserratRegular';
+    position: relative;
+    right: -11.7pc;
+    width: 100px;
+    top: 7pc;
+ }
+ .flagtext9{
+    font-family: 'MontserratRegular';
+    position: relative;
+    right: -11.7pc;
+    width: 100px;
+    top: 9.6pc;
+ }
+ .flagtext3{
+    font-family: 'MontserratRegular';
+    position: relative;
+    right: -11.5pc;
+    width: 200px;
+    top: 1.2pc;
+ }
+ .flagtext4{
+    font-family: 'MontserratRegular';
+    position: relative;
+    right: -11.5pc;
+    width: 200px;
+    top: 4pc;
+ }
+ .flagtext5{
+    font-family: 'MontserratRegular';
+    position: relative;
+    right: -12.4pc;
+    width: 200px;
+    top: 3.5pc;
+ }
+ .flagtext10{
+    font-family: 'MontserratRegular';
+    position: relative;
+    right: -12.4pc;
+    width: 200px;
+    top: 10.3pc;
+ }
+ .flagtext21{
+    font-family: 'MontserratRegular';
+    position: relative;
+    right: -12.4pc;
+    width: 200px;
+    top: 17pc;
+ }
+ .flagtext22{
+    font-family: 'MontserratRegular';
+    position: relative;
+    right: -12.4pc;
+    width: 200px;
+    top: 24pc;
+ }
+ 
+ .blueplate2{
+    position: absolute;
+    width: 42%;
+    bottom: -34.4pc;
+    right: 29.5%;
+ }
+ .links2{
+    position: absolute;
+    left: 34pc;
+     bottom: 54pc;
+     width: 216px;
+ }
+ 
+ .blueplateText2{
+    font-family: 'TitilliumWebBoldItalic';
+    position: absolute;
+    width: 42%;
+    bottom: -32.4pc;
+    left:37%;
+    font-style: italic;
+    color: rgb(218, 216, 216);
+    font-size: 29px;
+    font-weight: bold;
+ }
+ .video{
+    position: absolute;
+    left: 10%;
+    bottom: -105pc;
+    display: flex;
+    
+    
+ }
+ .video .one___flkjsjJJNJnn_nANN8hG_YG7GY7g7BH9 {
+    width: 300px;
+    height: 270px;
+    color: #006eff;
+    background: black;
+    position: relative;
+ }
+ .smallvideos{
+    position: absolute;
+    left: 10%;
+    bottom: 0pc;
+    display: grid;
+ }
+ .smallvideos .one___flkjsjJJNJnn_nANN8hG_YG7GY7g7BH9 {
+    width: 150px;
+    height: 130px;
+    color: #006eff;
+    background: black;
+    position: relative;
+    right: -51pc;
+    top: 0pc;
+ }
+ .men{
+    position: absolute;
+    right: 0%;
+    top: 60%;
+ }
+ .men2{
+    position: absolute;
+    right: 5%;
+    top: 26pc;
+    
+ }
+ .overlay {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    right: 5%;
+    top: 26pc;
+    background-color: rgba(231, 13, 13, 0.5);
+    z-index: 2;
+    cursor: pointer;
+  }
+ .menTest{
+    font-family: 'TitilliumWebLight';
+    position: absolute;
+    right: 70%;
+    bottom: -208%;
+ }
+ .menTest2{
+    font-family: 'TitilliumWebLight';
+    position: absolute;
+    right: 70%;
+    bottom: -24pc;
+   
+ }
+ .tabledata{
+    position: absolute;
+    top: 7%;
+    left: 0%;
+ }
+ 
+ .menText2{
+    font-family: 'TitilliumWebLight';
+    position: absolute;
+    right: 20.33%;
+    bottom: -298%;
+    
+ }
+ .menTestsmallvideos{
+    font-family: 'TitilliumWebLight';
+     position: absolute;
+     right: -55pc;
+     bottom: 28%;
+    
+ }
+ .menTestsmallvideosHeading{
+    font-family: 'TitilliumWebRegular';
+     position: absolute;
+     right: -65pc;
+     bottom: 22%;
+    
+ }
+ .menTestsmallvideosPara{
+    font-family: 'TitilliumWebLight';
+     position: absolute;
+     right: -62.6pc;
+     bottom: 7%;
+    
+ }
+ .menTestsmallvideos2{
+    font-family: 'TitilliumWebLight';
+     position: absolute;
+     right: -55pc;
+     bottom: 80%;
+    
+ }
+ .menTestsmallvideosHeading2{
+    font-family: 'TitilliumWebRegular';
+     position: absolute;
+     right: -65pc;
+     bottom: 74%;
+    
+ }
+ .menTestsmallvideosPara2{
+    font-family: 'TitilliumWebLight';
+     position: absolute;
+     right: -62.6pc;
+     bottom: 60%;
+    
+ }
+ .p-5 {
+    padding: 3rem!important;
+    width: 238px;
+ }
+ .viewallvideos{
+    font-family: 'TitilliumWebSemiBold';
+     position: absolute;
+     right: -63.6pc;
+     bottom: -12%;
+    
+ }
+ .menText3{
+     font-family: 'TitilliumWebLight';
+     position: absolute;
+     right: 38%;
+     bottom: -28.6pc;
+     position: absolute;
+     z-index:100;
+     border: none;
+ }
+ .heading2{
+    font-family: 'TitilliumWebRegular';
+    position: absolute;
+    right: 33%;
+    bottom: -245%;
+    width: 50%;
+ }
+ .heading3{
+    font-family: 'TitilliumWebRegular';
+    position: absolute;
+    right: 32%;
+    bottom: -26pc;
+    width: 50%;
+ 
+ }
+ 
+ /* .width-auto {
+    width: auto;
+ }
+ 
+ .text-lg {
+    font-size: 2rem;
+ }
+ 
+ .carousel-indicators li {
+    border: none;
+    background: #ccc;
+ }
+ 
+ .carousel-indicators li.active {
+    background: white;
+ } */

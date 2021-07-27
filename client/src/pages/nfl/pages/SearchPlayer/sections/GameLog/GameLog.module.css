@@ -1,0 +1,82 @@
+.main {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+  }
+  .mainFilterDiv {
+    margin-bottom: -40px;
+  }
+  .mainFlex {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .gameHeader {
+    height: 40px;
+    width: 20%;
+    background: linear-gradient(
+      122deg,
+      rgba(46, 156, 213, 1) 0%,
+      rgba(11, 60, 117, 1) 100%
+    );
+    color: white;
+    transform: skew(-15deg);
+    display: flex;
+    align-items: center;
+  }
+  .gameHeader p {
+    text-transform: uppercase;
+    margin-left: 20px;
+    transform: skew(15deg);
+  }
+  
+  /* table css */
+  .tableRowData {
+    color: #bdbec0 !important;
+  }
+  .lastCol {
+    border-left: 1px solid #bdbec0 !important;
+  }
+  .oppFlex {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+  }
+  .oppSpan {
+    color: #bdbec0;
+  }
+  .oppText {
+    color: #3d98d1;
+    text-transform: uppercase;
+  }
+  .oppImg {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .redResult {
+    color: #ef2239;
+  }
+  .greenResult {
+    color: #01b501 !important;
+  }
+  .resultText {
+    color: #3d98d1 !important;
+  }
+  
+  /* Filter css */
+  .selectFlex {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: -20px;
+    flex-wrap: wrap;
+  }
+  .selectFlex div {
+    /* width: 100%; */
+  }
+  .container {
+    /* width: 88%;
+    margin-left: auto;
+    margin-right: auto; */
+  }
+  

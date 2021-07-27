@@ -1,0 +1,11 @@
+.nflContainer {
+    text-align: center;
+    margin-bottom: 60px;
+    /* padding-top: -50px; */
+  }
+  .nflContainer h2 {
+    color: white;
+    text-transform: uppercase;
+    line-height: 0px;
+  }
+  
