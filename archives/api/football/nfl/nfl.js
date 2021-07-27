@@ -31,23 +31,6 @@ router.get('/standings', async (req, res) => {
 	}
 });
 
-// @route   GET api/football/nfl/schedule
-// @desc    Get NFL Schedule
-// @access  Public
-router.get('/schedule', async (req, res) => {
-	try {
-		const response = await axios.get(`${goalserveUrl}/nfl-schedule`, json);
-
-		if (response.data) {
-			console.log(response.data);
-			return res.status(200).send(response.data);
-		}
-	} catch (err) {
-		console.error(err.message);
-		return res.status(500).send('Server error');
-	}
-});
-
 // @route   GET api/football/nfl/scores
 // @desc    Get NFL Live Scores
 // @access  Public

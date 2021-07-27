@@ -2,6 +2,7 @@ const express = require('express');
 //const connectDB = require('./config/db');
 const sqlConnect = require('./config/sqlConnect');
 const path = require('path');
+const routes = require('./routes');
 
 const app = express();
 
@@ -13,10 +14,7 @@ sqlConnect();
 app.use(express.json({ extended: false }));
 
 //routes
-app.use('/api/users', require('./routes/api/users'));
-app.use('/api/auth', require('./routes/api/auth'));
-app.use('/api/football/nfl', require('./routes/api/football/nfl'));
-app.use('/api/football/ncaa', require('./routes/api/football/ncaa'));
+app.use(routes);
 
 // Serve static assets in production
 //if (process.env.NODE_ENV === 'production') {

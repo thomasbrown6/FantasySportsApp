@@ -13,3 +13,6 @@ export const GET_FCS_SCORES = 'GET_FCS_SCORES';
 export const GET_DIV3_SCORES = 'GET_DIV3_SCORES';
 export const GET_ALL_NCAA_SCORES = 'GET_ALL_NCAA_SCORES';
 export const NCAA_ERROR = 'NCAA_ERROR';
+
+export const GET_NFL_SCORES = 'GET_NFL_SCORES';
+export const NFL_ERROR = 'NFL_ERROR';

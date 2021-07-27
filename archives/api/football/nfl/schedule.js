@@ -4,8 +4,8 @@ const config = require('config');
 const axios = require('axios');
 const { check, validationResult } = require('express-validator');
 
-//Models
-const NcaaGame = require('../../../../../models/NCAA/NcaaGame');
+const NFLSchedule = require('../../../../../models/NFL/NFLSchedule');
+const NFLSeasonName = require('../../../../../models/NFL/NFLSeasonName');
 
 const goalserveUrl = `http://www.goalserve.com/getfeed/${config.get(
 	'goalserveApiKey'
@@ -13,19 +13,19 @@ const goalserveUrl = `http://www.goalserve.com/getfeed/${config.get(
 
 const json = { params: { json: 1 } };
 
-/*********************************************************
- ******************** NCAA FBS Scores ********************
+/********************************************************
+ ************ NFL Scores, Schedules, Standings ***********
  *********************************************************/
 
-// @route   GET api/football/ncaa/fbs/scores
-// @desc    Get NCAA FBS Scores
+// @route   GET api/football/nfl/schedule
+// @desc    Get NFL Schedule
 // @access  Public
-router.get('/fbs/scores', async (req, res) => {
+router.get('/', async (req, res) => {
 	try {
-		const response = await axios.get(`${goalserveUrl}/fbs-scores`, json);
+		const response = await axios.get(`${goalserveUrl}/nfl-schedule`, json);
 
 		if (response.data) {
-			console.log('GET: fbs scores');
+			console.log('GET: nfl schedule');
 			return res.status(200).send(response.data);
 		}
 	} catch (err) {
@@ -33,3 +33,5 @@ router.get('/fbs/scores', async (req, res) => {
 		return res.status(500).send('Server error');
 	}
 });
+
+module.exports = router;

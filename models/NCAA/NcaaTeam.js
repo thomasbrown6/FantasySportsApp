@@ -6,36 +6,36 @@ const NcaaTeam = sequelize.define(
 	'NcaaTeam',
 	{
 		// Model attributes are defined here
-		Id: {
+		id: {
 			type: DataTypes.INTEGER,
 			allowNull: false,
 			primaryKey: true,
 			autoIncrement: true
 		},
-		Name: {
+		name: {
 			type: DataTypes.STRING,
 			allowNull: false
 		},
-		Logo: {
+		logo: {
 			type: DataTypes.STRING,
 			allowNull: true
 		},
-		AwayTeamScore: {
+		awayTeamScore: {
 			type: DataTypes.STRING
 			//allowNull: false
 		},
-		HomeTeamScore: {
+		homeTeamScore: {
 			type: DataTypes.STRING
 			//allowNull: false
 		},
-		Status: {
+		status: {
 			type: DataTypes.STRING
 			//allowNull: false
 		},
-		TimeLeft: {
+		timeLeft: {
 			type: DataTypes.STRING
 		},
-		Date: {
+		date: {
 			type: DataTypes.STRING
 			//allowNull: false
 		}
