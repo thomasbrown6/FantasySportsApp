@@ -1,0 +1,24 @@
+.nflContainer {
+  text-align: center;
+  margin-bottom: 60px;
+  /* padding-top: -50px; */
+}
+.nflContainer h2 {
+  color: white;
+  text-transform: uppercase;
+  line-height: 0px;
+}
+.selectFlex {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: -20px;
+  flex-wrap: wrap;
+}
+.selectFlex div {
+  /* width: 100%; */
+}
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}

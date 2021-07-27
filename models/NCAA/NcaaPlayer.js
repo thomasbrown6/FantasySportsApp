@@ -6,7 +6,7 @@ const NcaaPlayer = sequelize.define(
 	'NcaaPlayer',
 	{
 		// Model attributes are defined here
-		Id: {
+		id: {
 			type: DataTypes.INTEGER,
 			allowNull: false,
 			primaryKey: true,
